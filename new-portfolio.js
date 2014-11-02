@@ -9,19 +9,22 @@
         if ($target.length) {
           var targetOffset = $target.offset().top;
             $('html,body')
-            .animate({scrollTop: targetOffset}, 1500);
+            .animate({scrollTop: targetOffset}, 2000);
             return false;
         }
       }
     });
+  $("header").removeClass("light");
 
   $(window).scroll( function() {
     var value = $(this).scrollTop();
     if ( value < 270 ){
       $("header").removeClass("light");
+      $("#blackMD").addClass("white");
     }
     else {
       $("header").addClass("light", 400);
+      $("#blackMD").removeClass("white").addClass("black");
     }
   });
 
