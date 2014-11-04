@@ -23,7 +23,17 @@ $(".circle").mouseenter(function() {
 });
 
 
-  $(window).scroll( function() {
+function coffeecount(){
+  var currentTime = new Date();
+  var month = currentTime.getMonth()+1;
+  var day = currentTime.getDate();
+  var cups = (((month* 30)+(day-30))*4.5);
+  document.getElementById("numberOfCoffees").innerHTML=cups;
+};
+
+window.onload = coffeecount;
+
+$(window).scroll( function() {
     var value = $(this).scrollTop();
     if ( value < 270 ){
       $("header").removeClass("light");
