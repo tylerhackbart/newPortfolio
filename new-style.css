@@ -28,11 +28,11 @@ background-image:url(images/tyler_photo_1.jpg);
 background-position: center top;
 }
 .carousel .carousel-inner .bg2 {
-background-image:url(images/laptop.jpg);
+background-image:url(images/amazing.jpg);
 background-position: center center;
 }
 .carousel .carousel-inner .bg3 {
-background-image:url(images/tyler_photo_1.jpg);
+background-image:url(images/P1030642_2.jpg);
 background-position: center bottom;
 }
 
@@ -177,28 +177,21 @@ header {
   text-decoration: underline;
   background-color: transparent;
   color: #FFFFFF;
-
 }
 
-#socialNetworks ul {
-  margin:0;
-  padding: 0;
-  list-style-type:none;
-  text-align: center;
+#mainTitle a button {
+  text-decoration: none;
 }
 
-#socialNetworks ul li {
-  display: inline;
-  margin: 1em 1em 1em 1em;
-}
-
-#socialNetworks ul li a {
+#socialNetworks {
   text-decoration: none;
   color: #FFFFFF;
   opacity: 0.7;
+  height: 100px;
+  text-align: center;
 }
 
-#socialNetworks ul li a:hover {
+#socialNetworks :hover{
   opacity: 1;
 }
 
@@ -210,13 +203,29 @@ header {
 }
 
 .circle {
-  width: 500px;
-  height: 500px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background: #4679BD;
+  width: 75px;
+  height: 75px;
+  -moz-border-radius: 75px;
+  -webkit-border-radius: 75px;
+  border-radius: 100px;
+  border: 3px solid #FFFFFF;
+  display: inline-block;
+  margin-left: 25px;
 }
+
+
+.circle-info a i{
+  padding-top: 35%;
+  color: #FFFFFF;
+}
+
+.circle-info :hover {
+  color: #0099FF;
+  transition-duration: 1s;
+}
+
+
+
 
 
 

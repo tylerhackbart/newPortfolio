@@ -16,6 +16,13 @@
     });
   $("header").removeClass("light");
 
+$(".circle").mouseenter(function() {
+  $(this).css("background", "#FFFFFF");
+}). mouseleave(function() {
+  $(this).css("background", "transparent");
+});
+
+
   $(window).scroll( function() {
     var value = $(this).scrollTop();
     if ( value < 270 ){
@@ -35,6 +42,7 @@ $("#playButton").click(function() {
 $("#pauseButton").click(function() {
     $("#myCarousel").carousel("pause");
 });
+
 
 
 
