@@ -18,7 +18,7 @@
 
 $(".circle").mouseenter(function() {
   $(this).css("background", "#FFFFFF");
-  $("#circle-info").css("color", "#000000");
+  $(".circle-info").css("color", "#000000");
 }). mouseleave(function() {
   $(this).css("background", "transparent");
 });
