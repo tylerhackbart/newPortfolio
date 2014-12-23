@@ -15,6 +15,7 @@
     <script type="text/javascript" src="new-portfolio.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <?php include('new-portfolio.php');?>
   </head>
   <header class="light" id="header">
     <nav class="navbar navbar-fixed-top" role="navigation">
@@ -287,47 +288,55 @@
 <div id="contactme" class="section col-md-12" style="height: 500px;">
   <h1 class="titleBlock" style="padding-top: 1em; padding-bottom: 1em;"> Get in Touch</h1>
   <div class="col-md-12">
-    <div class="col-md-3 col-md-offset-1" style="text-align: center;">
+    <div class="col-md-3 col-md-offset-1" style="text-align: left; padding-left: 70px;">
       <div>
         <ul class="list-unstyled">
           <li>
-            <i class="fa fa-map-marker"></i><h4>Location</h4>
+            <h4><span style="font-size: 40px;"><i class="fa fa-map-marker"></i></span> Location</h4>
             <p>Waterloo & Toronto</p>
           </li>
           <li>
-            <i class="fa fa-mobile-phone"></i><h4>Phone</h4>
-            <p>+519 500 8887</p>
+            <h4><span style="font-size:40px;"><i class="fa fa-mobile-phone"></i></span> Phone</h4>
+            <p style="color:#FBB039;">+519 500 8887</p>
           </li>
           <li>
-            <i style="font-size: 20px;"class="fa fa-envelope"></i>
-            <h4>Email</h4>
-            <p>t.hackbart@gmail.com</p>
+            <h4><span style="font-size: 30px;"><i style="font-size: 30px;"class="fa fa-envelope"></i></span> Email</h4>
+            <p style="color:#FBB039;">t.hackbart@gmail.com</p>
           </li>
         </ul>
       </div>
     </div>
     <div class="col-md-8">
-      <form action="/my-handling-form-page" method="post">
-        <div class="col-md-4">
+      <form method="post" action="new-portfolio.php">
+        <div class="col-md-5">
           <input type="text" id="name" placeholder="Name*"name="user_name" />
         </div>
-        <div class="col-md-4">
+        <div class="col-md-5">
           <input type="email" id="mail" placeholder="Email*" name="user_email" />
         </div>
-        <div class="col-md-8">
+        <div class="col-md-10">
           <input type="text" id="subject" placeholder="Subject" name="user_subject" />
           <textarea id="msg" placeholder="Message*" name="user_message"></textarea>
-          <button id="submit" type="submit"> Send Message</button>
+          <button id="submit" name="submit" type="submit" class="lead" value="Submit"> Send Message</button>
         </div>
       </form>
     </div>
   </div>
 </div>
 
-<div class="col-md-12"style="height:200px; width:100%; background-color:#4099FF;">
-<h1> One</h1>
+<div class="col-md-12"style="height:175px; width:100%; background-color:#4099FF; text-align: center; color: #FFFFFF; padding-top: 25px;">
+<div class="twitter-icon">
+  <i class="fa fa-twitter"></i>
+</div>
+<div style="color: #F0F0F0; font-weight: 300;">
+  <p>Did you know that in <span style="text-decoration: underline;">#HTML5</span> you are able to set a max number of characters in a textarea <span style="text-decoration: underline;">#NowYouKnow</span> <span style="text-decoration: underline;">#Programming</span></p>
+  <p style="font-weight: 400; opacity: 0.5;">Posted on 20 Dec</p>
+</div>
 </div>
 
+<div class="col-md-12" style="color:#000000;">
+  <p><i class="fa fa-copyright"></i> TYLER HACKBART ALL RIGHTS RESERVED</p>
+</div>
 
 </body>
 </html>
