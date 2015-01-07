@@ -21,9 +21,8 @@ background-repeat:no-repeat;
 background-size:cover;
 }
 .carousel .carousel-inner .bg1 {
-background-image:url(images/IMG_0334.jpg);
-background-position: center left;
--webkit-filter: grayscale(1) invert(0.1);
+background-image:url(images/tyler-main-2.jpg);
+background-position: left top;
 }
 
 
@@ -32,12 +31,9 @@ background-image:url(images/image1.jpg);
 background-position: center center;
 }
 .carousel .carousel-inner .bg3 {
-background-image:url(images/tyler-main-2.jpg);
-background-position: left top;
-}
-
-.main-Coming-Soon-Block {
-  background-image:url(images/laptop.jpg) no-repeat center center fixed;
+background-image:url(images/IMG_0334.jpg);
+background-position: center left;
+-webkit-filter: grayscale(1) invert(0.1);
 }
 
 body {
@@ -129,12 +125,14 @@ header {
 #work-photos ul li {
   list-style: none;
   margin-bottom: 0px;
+  max-height: 400px;
 }
 
-#work-photos ul li img {
+#work-photos ul li a img {
   cursor: pointer;
   width: 100%;
-
+  height: 100%;
+  overflow:hidden;
 }
 
 .blog-link-section{
