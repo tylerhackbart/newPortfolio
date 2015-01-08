@@ -286,6 +286,13 @@ header {
 .footer-block {margin-top: 20px;padding-top: 3em;font-weight: 200; height: 250px;}
 .resume-button {text-decoration: none;padding: 10px;border: 2px solid #333333 !important;background-color: #FFFFFF !important;}
 
+#modal-content p{
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+
 
 
 
