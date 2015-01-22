@@ -384,3 +384,9 @@ CSS for email form below
   line-height: 50px;
 }
 
+.modal.modal-wide .modal-dialog {
+  width: 90%;
+}
+
+
+

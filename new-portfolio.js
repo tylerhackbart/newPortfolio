@@ -46,6 +46,7 @@ $(window).scroll( function() {
     }
   });
 
+$('.parallax-window').parallax({imageSrc: 'images/tyler-main-2.jpg'});
 
 /*
 $(document).scroll(function() {

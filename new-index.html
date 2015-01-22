@@ -11,6 +11,7 @@
     <!-- Header Test Below -->
     <link href='http://fonts.googleapis.com/css?family=Krona+One' rel='stylesheet' type='text/css'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/path/to/parallax.js"></script>
     <script type="text/javascript" src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="new-portfolio.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
@@ -63,12 +64,12 @@
   <h1 style="font-weight: 100; font-size: 64px; letter-spacing: 0.75px;">Hello, My name is Tyler</h1>
   <h2 style="font-weight: 300; color: #888888;">  Web Developer, Designer, <br> and Tech Enthusiast <br></h2>
   <a href="#aboutme">
-    <button class="btn" style="width: 175px; height: 50px; background-color: #FFCC00; color: #FFFFFF; opacity: 0.9;"><h4>About Me <i class="fa fa-user"></i></h4></button>
+    <button class="btn" style="width: 165px; height: 50px; background-color: #FBB039; color: #fffefe; opacity: 0.9;"><h4 style="font-weight: 300; letter-spacing: 0.5px;">About Me <i class="fa fa-user"></i></h4></button>
   </a>
   <span style="width: 5px;"></span>
   <a href="#getintouch">
-    <button class="btn" style="width: 175px; height: 50px; background-color: #3366FF; color: #FFFFFF; opacity: 0.9;">
-       <h4>Get in Touch <i class="fa fa-paper-plane-o"></i></h4>
+    <button class="btn" style="width: 165px; height: 50px; background-color: #4682B4; color: #fffefe; opacity: 0.9;">
+       <h4 style="font-weight: 300; letter-spacing: 0.5px;">Get in Touch <i class="fa fa-paper-plane-o"></i></h4>
     </button>
   </a>
 </div>
@@ -291,7 +292,7 @@
         <h4 class="modal-title" style="text-align: center;">Blurbi<h4>
       </div>
       <div id="modal-content" class"modal-body">
-        <p>Curing my four months at the Digital Media Xone in the heart of Toronto I was able to work aside the CEO of Blurbi as an intern. I had a couple side programming projects that were for their service platform, but my main task was the redesign of their new site.<a href="http://www.blurbi.ca"><button style="margin-top:10px;" class="btn btn-primary"> Visit Current Site </button></a></p>
+        <p>During my four months at the Digital Media Xone in the heart of Toronto I was able to work aside the CEO of Blurbi as an intern. I had a couple side programming projects that were for their service platform, but my main task was the redesign of their new site.<a href="http://www.blurbi.ca"><button style="margin-top:10px;" class="btn btn-primary"> Visit Current Site </button></a></p>
         <p>They have changed some of the code since my time at the company</p>
         <h1> INPUT MOCK UP HERE OF BLURBI ON ALL DEVICES</h1>
         <img style="width:100%;"src="images/blurbi.jpg"/>
@@ -303,14 +304,22 @@
 </div>
 
 <div class="modal fade portfoliomodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog modal-lg" style="width: 90%;">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title">Grocery Go Go Application<h4>
+        <h4 class="modal-title lead">Portfolio 2.0<h4>
       </div>
       <div id="modal-content" class"modal-body">
-        <p>An early stage of an application I created during Bitmaker Labs. My team and I worked on a webpage version as our final project, but I belived we should have made a mobile version first. The application took prices of the current flyer of your top three choices for grocery stores. You would present your list of things you needed and it would give you the cheapest total, including your driving time and savings. </p>
-        <img style="width:100%;"src="images/grocerygogoapp2.png"/>
+        <div class="col-md-4">
+        <p class="lead" style="text-align:left;">Over the last couple months, I have been working on the redesign of my portfolio. My original portfolio is showcased below for the sole purpose of showing it is to prove progress. Everything was build from the ground up on this new site, with the inclusion of jQuery and Bootstrap frameworks.</p>
+        <button id="code-colors" class="btn" style="border: 1px solid red; color: red; background: #FFFFFF;" disabled>HTML</button>
+        <button id="code-colors" class="btn" style="border: 1px solid blue; color: blue; background: #FFFFFF;" disabled>jQuery</button>
+        <button id="code-colors" class="btn" style="border: 1px solid green; color: green; background: #FFFFFF;" disabled>CSS</button>
+        <button id="code-colors" class="btn" style="border: 1px solid purple; color: purple; background: #FFFFFF;" disabled> PHP </button>
+      </div>
+        <div style="text-align: center;" class="col-md-8">
+        <img style="width:100%;"src="images/portfolio.jpg"/>
+      </div>
       </div>
     </div>
   </div>
