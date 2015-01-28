@@ -383,6 +383,15 @@ CSS for email form below
   font-size: 30px;
   line-height: 50px;
 }
+/*
+We need an adjustment with the reSize CSS when the screen is on a tablet
+the min-height needs to be somewhere in the 250px range and when it is 1000px and bigger the height needs to be bigger
+
+*/
+#reSize {
+  min-height: 350px;
+  max-height: 350px;
+}
 
 .modal.modal-wide .modal-dialog {
   width: 90%;
