@@ -1,5 +1,5 @@
   $(document).ready(function () {
-
+/*
   $('a[href*=#]').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
     && location.hostname == this.hostname) {
@@ -9,11 +9,67 @@
         if ($target.length) {
           var targetOffset = $target.offset().top;
             $('html,body')
-            .animate({scrollTop: targetOffset}, 2000);
+            .animate({scrollTop: targetOffset}, 800);
             return false;
         }
       }
     });
+
+  function onScroll(event){
+    var scrollPosition = $(document).scrollTop();
+    $('#menu-list ul li a').each(function() {
+      var currentLink = $(this);
+      var refElement = $(currentLink.attr("href"));
+      if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+        $('#menu-list ul li a').removeClass("position");
+        currentLink.addClass("position");
+      }
+      else {
+        currentLink.removeClass("position");
+      }
+    });
+*/
+
+$(document).on("scroll", onScroll);
+ 
+$('a[href^="#"]').on('click', function (e) {
+e.preventDefault();
+$(document).off("scroll");
+ 
+$('a').each(function () {
+$(this).removeClass('active');
+})
+$(this).addClass('active');
+ 
+var target = this.hash;
+$target = $(target);
+$('html, body').stop().animate({
+'scrollTop': $target.offset().top+2
+}, 500, 'swing', function () {
+window.location.hash = target;
+$(document).on("scroll", onScroll);
+});
+});
+});
+ 
+function onScroll(event){
+var scrollPosition = $(document).scrollTop();
+$('#menu-list a').each(function () {
+var currentLink = $(this);
+var refElement = $(currentLink.attr("href"));
+if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+$('#menu-list ul li a').removeClass("active");
+currentLink.addClass("active");
+}
+else{
+currentLink.removeClass("active");
+}
+});
+
+
+
+
+
   $("header").removeClass("light");
 
 $(".circle").mouseenter(function() {
@@ -36,7 +92,7 @@ window.onload = coffeecount;
 
 $(window).scroll( function() {
     var value = $(this).scrollTop();
-    if ( value < 270 ){
+    if ( value < 375 ){
       $("header").removeClass("light");
       $("#menu-list ul li a").addClass("white");
     }
@@ -47,6 +103,7 @@ $(window).scroll( function() {
   });
 
 $('.parallax-window').parallax({imageSrc: 'images/tyler-main-2.jpg'});
+
 
 /*
 $(document).scroll(function() {
@@ -116,4 +173,4 @@ $('a').click(function() {
 
 
 
-});
+};

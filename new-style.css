@@ -177,7 +177,13 @@ header {
 .navbar div ul li a:hover {
   text-decoration: underline;
   background-color: transparent;
-  color: #989898;
+  color: #c05746;
+}
+
+.active {
+  text-decoration: underline;
+  background-color: transparent;
+  color: #c05746;
 }
 
 
