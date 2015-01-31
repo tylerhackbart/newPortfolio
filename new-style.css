@@ -60,10 +60,6 @@ header {
   padding-top: 10px;
 }
 
-.section.active {
-  text-decoration: underline;
-}
-
 
 .icon_social {
   background-color: blue;
@@ -97,13 +93,12 @@ header {
 }
 
 #about-block {
-  margin-top: -220px;
   width: 100%;
-  height: 425px;
   background-color: #FFFFFF;
   text-align: center;
-  padding-left: 6em;
-  padding-right: 6em;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 4em;
 }
 
 .topheadersquares {
@@ -171,20 +166,21 @@ header {
 
 .headerNav {
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 .navbar div ul li a:hover {
   text-decoration: underline;
   background-color: transparent;
-  color: #c05746;
+  color: #bb3131;
 }
 
-.active {
+.frost {
   text-decoration: underline;
-  background-color: transparent;
-  color: #c05746;
+  color: #bb3131;
 }
+
 
 
 #mainTitle a button {
@@ -233,11 +229,10 @@ header {
 }
 
 #random-facts {
-  height: 200px;
   width: 100%;
   color: #B8B8B8;
   text-align: center;
-  padding-top: 3em;
+  padding: 1em 0em 1em 0em;
 }
 
 #random-facts div h1 {

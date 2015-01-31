@@ -1,45 +1,30 @@
   $(document).ready(function () {
-/*
-  $('a[href*=#]').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    && location.hostname == this.hostname) {
-      var $target = $(this.hash);
-      $target = $target.length && $target
-      || $('[name=' + this.hash.slice(1) +']');
-        if ($target.length) {
-          var targetOffset = $target.offset().top;
-            $('html,body')
-            .animate({scrollTop: targetOffset}, 800);
-            return false;
-        }
-      }
-    });
 
-  function onScroll(event){
-    var scrollPosition = $(document).scrollTop();
-    $('#menu-list ul li a').each(function() {
-      var currentLink = $(this);
-      var refElement = $(currentLink.attr("href"));
-      if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-        $('#menu-list ul li a').removeClass("position");
-        currentLink.addClass("position");
-      }
-      else {
-        currentLink.removeClass("position");
-      }
-    });
-*/
+$(window).scroll( function() {
+    var value = $(this).scrollTop();
+    if ( value < 275 ){
+      $("header").removeClass("light");
+      $("#menu-list ul li a").addClass("white");
+      $("#blue-sky").addClass("hide");
+
+    }
+    else {
+      $("header").addClass("light", 400);
+      $("#menu-list ul li a").removeClass("white").addClass("black");
+      $("#blue-sky").removeClass("hide");
+    }
+  });
 
 $(document).on("scroll", onScroll);
  
 $('a[href^="#"]').on('click', function (e) {
 e.preventDefault();
-$(document).off("scroll");
+
  
-$('a').each(function () {
-$(this).removeClass('active');
+$('#menu-list a').each(function () {
+$(this).removeClass('frost');
 })
-$(this).addClass('active');
+$(this).addClass('frost');
  
 var target = this.hash;
 $target = $(target);
@@ -51,6 +36,8 @@ $(document).on("scroll", onScroll);
 });
 });
 });
+
+
  
 function onScroll(event){
 var scrollPosition = $(document).scrollTop();
@@ -58,19 +45,11 @@ $('#menu-list a').each(function () {
 var currentLink = $(this);
 var refElement = $(currentLink.attr("href"));
 if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-$('#menu-list ul li a').removeClass("active");
-currentLink.addClass("active");
-}
-else{
-currentLink.removeClass("active");
+$('#menu-list ul li a').removeClass("frost");
+currentLink.addClass("frost");
 }
 });
 
-
-
-
-
-  $("header").removeClass("light");
 
 $(".circle").mouseenter(function() {
   $(this).css("background", "#FFFFFF");
@@ -89,7 +68,7 @@ function coffeecount(){
 };
 
 window.onload = coffeecount;
-
+/*
 $(window).scroll( function() {
     var value = $(this).scrollTop();
     if ( value < 375 ){
@@ -103,6 +82,7 @@ $(window).scroll( function() {
   });
 
 $('.parallax-window').parallax({imageSrc: 'images/tyler-main-2.jpg'});
+*/
 
 
 /*
