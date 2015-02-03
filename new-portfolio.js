@@ -53,9 +53,10 @@ currentLink.addClass("frost");
 
 $(".circle").mouseenter(function() {
   $(this).css("background", "#FFFFFF");
-  $(".circle-info").css("color", "#000000");
+  $(this).addClass("hover-blue");
 }). mouseleave(function() {
   $(this).css("background", "transparent");
+  $(this).removeClass("hover-blue");
 });
 
 
@@ -68,6 +69,7 @@ function coffeecount(){
 };
 
 window.onload = coffeecount;
+
 /*
 $(window).scroll( function() {
     var value = $(this).scrollTop();
@@ -128,7 +130,7 @@ $(this).removeClass('active');
 });
 };
 */
-
+/*
 
 
 
@@ -151,6 +153,6 @@ $('a').click(function() {
 });
 
 
-
+*/
 
 };

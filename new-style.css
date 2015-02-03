@@ -190,13 +190,17 @@ header {
 
 #socialNetworks {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   height: 100px;
   text-align: center;
 }
 
 #socialNetworks :hover{
   opacity: 1;
+}
+
+#socialNetworks a i :hover {
+  color: red;
 }
 
 .titleBlock {
@@ -215,18 +219,22 @@ header {
   border: 3px solid #FFFFFF;
   display: inline-block;
   margin-left: 25px;
+  color: #FFFFFF !important;
 }
 
 
-.circle-info i{
+#circle-info i{
   padding-top: 35%;
-  color: #FFFFFF;
 }
 
-.circle-info :hover {
-  color: #0099FF;
-  transition-duration: 0s;
+.hover-blue {
+  color:#4682B4 !important;
+  -webkit-transition-duration:0.25s;
+  transition-diration:0.25s;
 }
+
+
+
 
 #random-facts {
   width: 100%;
