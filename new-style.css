@@ -101,6 +101,13 @@ header {
   padding-bottom: 4em;
 }
 
+.paragraph-align {
+  width: 100%;
+  text-align: center;
+  padding-right: 30% !important;
+  padding-left: 30% !important;
+}
+
 .topheadersquares {
     width: 40px;
     height: 40px;
@@ -108,27 +115,6 @@ header {
     margin-left: 2px;
 }
 
-#work-photos {
-  width: 100%;
-}
-
-#work-photos ul li img{
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
-}
-
-#work-photos ul li {
-  list-style: none;
-  margin-bottom: 0px;
-  max-height: 400px;
-}
-
-#work-photos ul li a img {
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  overflow:hidden;
-}
 
 .blog-link-section{
   background-color: #4682B4;
@@ -191,23 +177,19 @@ header {
 #socialNetworks {
   text-decoration: none;
   color: #FFFFFF !important;
-  height: 100px;
   text-align: center;
+  padding-bottom: 30px;
 }
 
-#socialNetworks :hover{
-  opacity: 1;
-}
 
-#socialNetworks a i :hover {
-  color: red;
-}
 
 .titleBlock {
   color: #FBB039;
+  letter-spacing: 2px;
   font-weight: 100;
   text-align: center;
   padding-bottom: 1em;
+
 }
 
 .circle {
@@ -241,16 +223,24 @@ header {
   color: #B8B8B8;
   text-align: center;
   padding: 1em 0em 1em 0em;
+font-family: 'Pathway Gothic One', sans-serif;
+
 }
 
 #random-facts div h1 {
   font-weight: 300;
+  letter-spacing: 2px;
+  color: #7c8483;
 }
+/*
+color: #7c8483; - grey
+*/
 
 #random-facts div p {
   font-size: 15px;
-  letter-spacing: -1px;
-  margin-top: -10px;
+  letter-spacing: 1px;
+  margin-top: -11px;
+  color: #c77f25;
 }
 
 
@@ -263,7 +253,6 @@ header {
 }
 
 #skills {
-  height: 500px;
   padding-top: 3em;
   background-color: #F8F8F8;
 }
@@ -276,7 +265,7 @@ header {
   color: #F8F8F8;
   line-height: 75px;
   text-align: center;
-  background: #B0B0B0;
+  background: #4682B4;
   margin-top: 15px;
 }
 
@@ -293,7 +282,11 @@ header {
 
 .ordered {display: inline;}
 .footer-block {margin-top: 20px;padding-top: 3em;font-weight: 200; height: 250px;}
-.resume-button {text-decoration: none;padding: 10px;border: 2px solid #333333 !important;background-color: #FFFFFF !important;}
+.resume-button {padding: 10px;border: 2px solid #333333 !important;background-color: #FFFFFF;}
+
+.resume-button :hover {
+  background-color: #393939 !important;
+}
 
 #modal-content p{
   padding-left: 5%;
@@ -397,9 +390,72 @@ We need an adjustment with the reSize CSS when the screen is on a tablet
 the min-height needs to be somewhere in the 250px range and when it is 1000px and bigger the height needs to be bigger
 
 */
-#reSize {
-  min-height: 350px;
-  max-height: 350px;
+
+#work-photos {
+  width: 100%;
+}
+
+#work-photos ul li img{
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+#work-photos ul li {
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+#work-photos ul li a img {
+  cursor: pointer;
+  width: 100%;
+  overflow:hidden;
+}
+
+
+@media(min-width: 750px) and (max-width: 900px){
+  #reSize{
+    max-height:300px;
+    min-height:300px;
+  }
+}
+
+
+
+
+@media(min-width: 1000px) and (max-width: 1300px){
+  #reSize{
+    height:100%;
+  }
+  #work-photos ul li a img {
+  cursor: pointer;
+  width: 100%;
+  height: 275px;
+  overflow:hidden;
+  }
+}
+
+@media(min-width: 1400px) and (max-width: 1600px){
+  #reSize{
+    max-height:100%;
+  }
+  #work-photos ul li a img {
+  cursor: pointer;
+  width: 100%;
+  height: 300px;
+  overflow:hidden;
+  }
+}
+
+@media(min-width: 1601px){
+  #reSize{
+    max-height:100%;
+  }
+  #work-photos ul li a img {
+  cursor: pointer;
+  width: 100%;
+  height: 400px;
+  overflow:hidden;
+  }
 }
 
 .modal.modal-wide .modal-dialog {

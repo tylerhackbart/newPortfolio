@@ -64,7 +64,7 @@ function coffeecount(){
   var currentTime = new Date();
   var month = currentTime.getMonth()+1;
   var day = currentTime.getDate();
-  var cups = (((month* 30)+(day-30))*4.5);
+  var cups = Math.floor((((month* 30)+(day-30))*4.5));
   document.getElementById("numberOfCoffees").innerHTML=cups;
 };
 
