@@ -23,17 +23,20 @@ background-size:cover;
 .carousel .carousel-inner .bg1 {
 background-image:url(images/tyler-main-2.jpg);
 background-position: left top;
+background-attachment : fixed;
 }
 
 
 .carousel .carousel-inner .bg2 {
 background-image:url(images/image1.jpg);
 background-position: center center;
+background-attachment : fixed;
 }
 .carousel .carousel-inner .bg3 {
 background-image:url(images/IMG_0334.jpg);
 background-position: center left;
 -webkit-filter: grayscale(1) invert(0.1);
+background-attachment : fixed;
 }
 
 body {
