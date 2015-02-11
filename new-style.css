@@ -16,8 +16,18 @@ z-index: 10;
 .carousel .item {
 background-color: #777;
 }
+
+
+
 .carousel .carousel-inner .bg {
 background-repeat:no-repeat;
+
+-webkit-transition: 1.5s ease-in-out left;
+    transition: 1.5s ease-in-out left;
+    -webkit-transition: 1.5s, ease-in-out, left;
+    -moz-transition: 1.5s, ease-in-out, left;
+    -o-transition: 1.5s, ease-in-out, left;
+    transition: 1.5s, ease-in-out, left;
 background-size:cover;
 }
 .carousel .carousel-inner .bg1 {
