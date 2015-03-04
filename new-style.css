@@ -170,7 +170,7 @@ header {
 }
 
 .white {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 }
 
 .white :hover {
@@ -257,6 +257,15 @@ header {
   height: 500px;
   text-align:center;
 }
+
+.quote-line {
+  padding-top: 30px; color: #F8F8F8; font-weight: 100; line-height: 40px;
+}
+
+.quote-person {
+  padding-bottom: 30px; color: #228B22; font-weight: 100;
+}
+
  .quote-block-1 {
   background-image:url(images/desk.jpg);
   background-color: #D8D8Bf;
@@ -264,13 +273,18 @@ header {
   background-repeat: no-repeat;
  }
 
+ .quote-border-1 {
+    margin-top: 10em; border: 5px solid #FFFFFF; background: rgba(0,0,0,0.5);
+ }
+
  .quote-block-2 {
   width:100%;
   height: 425px;
-  background-image:url(images/tyler-3.jpg);
   background-color: #ee7942;
-  background-position: center;
-  background-repeat: no-repeat;
+ }
+
+ .quote-border-2 {
+  margin-top: 7em; border: 5px solid #FFFFFF; background: transparent;
  }
 
 .circle {
@@ -384,6 +398,7 @@ color: #7c8483; - grey
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 15px;
 }
 
 /*
@@ -471,9 +486,17 @@ We need an adjustment with the reSize CSS when the screen is on a tablet
 the min-height needs to be somewhere in the 250px range and when it is 1000px and bigger the height needs to be bigger
 
 */
+.work-title-padding {
+  padding-top: 2em; padding-bottom: 2em;
+}
+
 
 #work-photos {
   width: 100%;
+}
+
+#work-photos ul {
+  padding-left: 0;
 }
 
 #work-photos ul li img{
@@ -491,6 +514,121 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
   width: 100%;
   overflow:hidden;
 }
+
+.placement-title-modal {
+  margin-top:10px; padding:7px !important; min-height: 40px !important;
+}
+
+.placement-title-modal div p {
+  margin-bottom: 4px !important;
+}
+
+.placement-job-title-modal {
+  text-align:right;
+}
+
+#placement-info-block {
+  margin-bottom: 20px;
+}
+
+#placement-info-block p {
+  text-align:initial;
+}
+
+.node-language {
+  border: 1px solid green !important; color: green; background: #FFFFFF;
+}
+
+.html-language {
+  border: 1px solid orange !important; color: orange; background: #FFFFFF;
+}
+
+.css-language {
+  border: 1px solid red !important; color: red; background: #FFFFFF;
+}
+
+.jquery-language {
+  border: 1px solid blue !important; color: blue; background: #FFFFFF;
+}
+
+.php-language {
+  border: 1px solid purple !important; color: purple; background: #FFFFFF;
+}
+
+.xml-language {
+  border: 1px solid #6B8E23 !important; color: #6B8E23; background: #FFFFFF; margin-bottom: 10px;
+}
+
+.ruby-language {
+  border: 1px solid red !important; color: red; background: #FFFFFF; margin-bottom: 10px;
+}
+
+.objectivec-language {
+  border: 1px solid #00688B !important; color: #00688B; background: #FFFFFF; margin-bottom: 10px;
+}
+
+.swift-language {
+  border: 1px solid #FF2400 !important; color: #FF2400; background: #FFFFFF; margin-bottom: 10px;
+}
+
+#photography-modal {
+  width: 90%; background-color: #373737 !important;
+}
+
+.photography-modal-div {
+  background-color: #373737 !important; color: #dadada !important;
+}
+
+
+#placement-link-website {
+  margin-top:10px; text-align:center; width: 175px; height: 40px; font-size: 18px; font-weight: 200;
+}
+
+#photos-modal {
+  margin-bottom: 20px;
+}
+
+#photos-modal img {
+  width: 100%;
+}
+
+#getintouch h1 {
+  padding-top: 2em; padding-bottom: 1em;
+}
+
+.yellow {
+  color:#FBB039;
+}
+
+#contact-side {
+  text-align: left; padding-left: 70px;
+}
+
+#contact-side ul li h4 span {
+  font-size: 40px;
+}
+
+.contact-side-special {
+  font-size: 30px;
+}
+
+#twitter-section {
+ width:100%; background-color:#4099FF; text-align: center; color: #FFFFFF; padding: 25px 0px 10px 0px;
+}
+
+.twitter-post {
+  color: #F0F0F0; font-weight: 300;
+}
+
+.twitter-date {
+  font-weight: 200; opacity: 0.5;
+}
+
+.underline-decoration {
+  text-decoration: underline;
+}
+
+
 
 @media(min-width: 550px){
 
