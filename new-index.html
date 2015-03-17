@@ -11,7 +11,6 @@
     <link href='http://fonts.googleapis.com/css?family=Krona+One' rel='stylesheet' type='text/css'>
    <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="/path/to/parallax.js"></script>
     <script type="text/javascript" src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="new-portfolio.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
@@ -23,7 +22,7 @@
       <div class="container-fluid">
        <div class="navbar-header">
             <button type="button" class="navbar-toggle navbar-extra" data-toggle="collapse" data-target="#menu-list">
-              <i class="fa fa-bars fa-2x white"></i>
+              <i id ="change"class="fa fa-bars fa-2x white"></i>
             </button>
             <span class="color-block-logo-padding">
             <img href="#"class="topheadersquares"src="images/yellowblock.jpg">
@@ -74,9 +73,8 @@
     </button>
   </a>
 </div>
-<div id="info-about" style="height: inherit;">
 <div id="about-block" class=" col-md-12">
-      <h1 id="aboutme" class="titleBlock" style="padding-top: 2em;"> About Me </h1>
+      <h1 id="aboutme" class="titleBlock" > About Me </h1>
       <p class="lead"> My name is Tyler and I am a freelance web developer who is specialized in front-end development, with a diverse work background. Through self learning and a nine week intense web development course, called Bitmaker Labs, I have gained the ability to code in over six different programming languages and have been part of three start up teams. I am excited by companies that are building meaningful products and disruptive technologies. I have a dedicated, farm raised work ethic alongside a passion for crafting amazing user interactions.
       </p>
 </div>
@@ -96,9 +94,10 @@
   </div>
 </div>
 
-<div id="random-facts"class="col-md-12">
+<div id="random-facts" class="col-md-12">
+  <div class="container">
   <div id="coffee-calculation" class="col-md-4 col-xs-12">
-      <h1><i class="fa fa-coffee"></i> <span id="numberOfCoffees"></span></h1>
+      <h1><i class="fa fa-coffee"></i><span id="numberOfCoffees"></span></h1>
     <p>cups of coffee this year</p>
   </div>
   <div id="code-calculation" class="col-md-4 col-xs-12">
@@ -110,36 +109,36 @@
     <p>longest streak programming</p>
   </div>
 </div>
-
 </div>
+
 <!-- Skills below, touching on as many things as I can, highlighting as many languages in this spot-->
 
 <!--Skills will be 1. Design, HTML & CSS, Javascript, Ruby, Responsive ObjectiveC and Swift, Creative Cloud? PHP?
 -->
-    <div id="skills" style="height: 600px; width:100%;"class="col-md-12 section">
-      <div>
+<div id="skills" class="col-md-12 container">
+      <div class="col-md-12">
         <h1 class="titleBlock">Skills</h1>
       </div>
       <div class="col-md-12">
-        <div class="col-md-6">
-          <div class="col-sm-10" style="text-align: right;">
+        <div class="col-xs-12 col-md-6 ">
+          <div class="col-xs-8 col-sm-9 col-md-10" style="text-align: right;">
             <h4>Self Learning</h4>
             <p>Bitmaker Labs web course got the ball rolling, from those building blocks of programming, I have be able to branch out and learn a varity of different programs and languages. Knowing what resources are out there and how to use them effectively.</p>
           </div>
-          <div class="col-sm-2">
+          <div class="col-xs-4 col-sm-3 col-md-2">
             <div class="skills-circle">
               <i class="fa fa-laptop"></i>
             </div>
           </div>
         </div>
   <!-- Left Side - First Row -->
-        <div class="col-md-6">
-          <div class="col-md-2">
+        <div class="col-xs-12 col-md-6 ">
+          <div class="col-xs-4 col-sm-3 col-md-2">
             <div class="skills-circle">
               <i class="fa fa-user"></i>
             </div>
           </div>
-          <div class="col-md-10" style="text-align: left;">
+          <div class="col-xs-8 col-sm-9 col-md-10" style="text-align: left;">
             <h4>User Experience</h4>
             <p> Designing various user experiences involves more than the visual effects, it involves designing the feel as intuitive and as easy as possible. My experience with both mobile and desktop interfaces allows me to make the user experience a positive one.
             </p>
@@ -147,13 +146,13 @@
         </div>
       </div>
       <div class="col-md-12">
-        <div class="col-md-6">
-          <div class="col-sm-10" style="text-align: right;">
+        <div class="col-xs-12 col-md-6">
+          <div class="col-xs-8 col-sm-9 col-md-10" style="text-align: right;">
             <h4>iOS Development</h4>
             <p> I have been designing application for a couple of years, and have recently started to develope them. I have been working for a company called GrandezVous as their iOS Developer as well as learning Swift, Apple's new programming language for a personal application of mine.
             </p>
           </div>
-          <div class="col-sm-2">
+          <div class="col-xs-4 col-sm-3 col-md-2">
             <div class="skills-circle">
               <i class="fa fa-apple"></i>
             </div>
@@ -161,44 +160,44 @@
         </div>
   <!-- Left Side - First Row -->
         <div class="col-md-6">
-          <div class="col-md-2">
+          <div class="col-xs-4 col-sm-3 col-md-2">
             <div class="skills-circle">
               <i class="fa fa-terminal"></i>
             </div>
           </div>
-          <div class="col-md-10" style="text-align: left;">
+          <div class="col-xs-8 col-sm-9 col-md-10" style="text-align: left;">
             <h4>Javascript</h4>
             <p>My first framework I learnt was jQuery, my most used and perferred. I have expanded my knowledge, learning server side javascript with Node.js and more recently Ember.js and Angular.js.</p>
           </div>
         </div>
       </div>
       <div class="col-md-12">
-        <div class="col-md-6 col-xs-12">
-          <div class="col-sm-10" style="text-align: right;">
+        <div class="col-xs-12 col-md-6 ">
+          <div class="col-xs-8 col-sm-9 col-md-10" style="text-align: right;">
             <h4>Time Management</h4>
             <p> An average week: 60 hours at two jobs, working for two start ups, setting time for learning new programming languages and also working on a personal iOS game. This doesn't just take determination and great work ethic, but a lot time management.
           </div>
-          <div class="col-sm-2">
+          <div class="col-xs-4 col-sm-3 col-md-2">
             <div class="skills-circle">
               <i class="fa fa-random"></i>
             </div>
           </div>
         </div>
   <!-- Left Side - First Row -->
-        <div class="col-md-6 col-xs-12">
-          <div class="col-md-2">
+        <div class="col-xs-12 col-md-6 ">
+          <div class="col-md-2 col-sm-3 col-xs-4">
             <div class="skills-circle">
               <i class="fa fa-tablet"></i>
             </div>
           </div>
-          <div class="col-md-10" style="text-align: left;">
+          <div class="col-md-10 col-sm-9 col-xs-8" style="text-align: left;">
             <h4>Responsive Design</h4>
             <p>"Mobile First" My first internship at Blurbi was to redesign and make their whole site mobile friendly, with the use of Bootstrap columns and CSS media queries.<code>@media</code></p>
           </div>
         </div>
       </div>
     </div>
-  </div>
+</div>
 
   <div class="col-md-12 quote-block quote-block-1">
     <div class="col-md-8 col-md-offset-2 quote-border-1">
@@ -208,12 +207,12 @@
   </div>
 
 <div class=" col-md-12 paragraph-align">
-  <h1 class="white"><i class="fa fa-github fa-5x"></i></h1>
-  <h1 class="titleBlock"> Git &amp; GitHub</h1>
+  <h1><i class="fa fa-github fa-5x"></i></h1>
+  <h1 class="titleBlock">Git &amp; GitHub</h1>
   <p class="lead git-section">I really want to show as much work as I can. However my contracts I have either completed or I am currently working on, restrict me to showing off the code and progess. My personal projects don't follow the same rules and will be available for viewing on my github.
     <br>
-    <code id="code-link">
-      <a href="https://github.com/tylerhackbart"> Go Look Now <i class="fa fa-arrow-circle-right"></i></a>
+    <code>
+      <a id="code-link" href="https://github.com/tylerhackbart"> Go Look Now <i class="fa fa-arrow-circle-right"></i></a>
     </code>
   </p>
 </div>

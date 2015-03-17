@@ -2,7 +2,7 @@ html, body {
   height:100%;
   width: 100%;
   margin:0;
-  padding:0;
+  padding: 0;
 }
 .carousel, .item, .active {
   height:100%;
@@ -46,7 +46,6 @@ html, body {
   background-attachment : fixed;
 }
 .navbar {
-  margin-bottom: 0 !important;
 }
 
 .navbar-extra {
@@ -83,7 +82,6 @@ header {
   padding-top: 10px;
 }
 
-
 .icon_social {
   background-color: blue;
 }
@@ -91,7 +89,6 @@ header {
 .circle-text {
   width: 50%;
 }
-
 
 .circle-text:after {
   content:"";
@@ -119,9 +116,7 @@ header {
   width: 100%;
   background-color: #FFFFFF;
   text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-bottom: 4em;
+  padding: 1em 20% 4em 20%;
 }
 
 .paragraph-align {
@@ -129,8 +124,17 @@ header {
   text-align: center;
   padding-right: 30% !important;
   padding-left: 30% !important;
-  background-color:#20B2AA;
+  background-color:#027673;
+  color:#FFFFFF;
 }
+
+.paragraph-align h1 {
+  margin-top: 0 !important;
+}
+
+/*
+#20B2AA
+*/
 
 .topheadersquares {
     width: 40px;
@@ -142,10 +146,9 @@ header {
 
 .blog-link-section {
   width:100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
   background-color: #4682B4;
-  padding:0;
 }
 
 .section-header {
@@ -177,6 +180,8 @@ header {
   color: #000000;
 }
 
+
+
 .headerNav {
   font-size: 12px;
   font-weight: 400;
@@ -206,7 +211,7 @@ header {
 }
 
 #code-link {
-  color:#20B2AA;
+  color: #027673 !important;
 }
 
 #mainTitle {
@@ -238,7 +243,6 @@ header {
   text-decoration: none;
   color: #FFFFFF !important;
   text-align: center;
-  padding-bottom: 30px;
 }
 
 
@@ -254,16 +258,22 @@ header {
 
 .quote-block {
   width:100%;
-  height: 500px;
+  height:500px;
   text-align:center;
+  padding: 10%;
 }
 
 .quote-line {
-  padding-top: 30px; color: #F8F8F8; font-weight: 100; line-height: 40px;
+  padding-top: 30px;
+  color: #F8F8F8;
+  font-weight: 100;
+  line-height: 40px;
 }
 
 .quote-person {
-  padding-bottom: 30px; color: #228B22; font-weight: 100;
+  padding-bottom: 30px;
+  color: #228B22;
+  font-weight: 100;
 }
 
  .quote-block-1 {
@@ -274,7 +284,8 @@ header {
  }
 
  .quote-border-1 {
-    margin-top: 10em; border: 5px solid #FFFFFF; background: rgba(0,0,0,0.5);
+    border: 5px solid #FFFFFF;
+    background: rgba(0,0,0,0.5);
  }
 
  .quote-block-2 {
@@ -315,10 +326,11 @@ header {
 
 #random-facts {
   width: 100%;
-  color: #B8B8B8;
+  color: #FFFFFF;
   text-align: center;
-  padding: 1em 0em 1em 0em;
-font-family: 'Pathway Gothic One', sans-serif;
+  font-family: 'Pathway Gothic One', sans-serif;
+  padding: 2em;
+
 
 }
 
@@ -348,8 +360,9 @@ color: #7c8483; - grey
 }
 
 #skills {
-  padding-top: 3em;
   background-color: #F8F8F8;
+  width: 100%;
+  padding-bottom: 20px;
 }
 
 .skills-circle {
@@ -630,28 +643,79 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 
 
 
-@media(min-width: 550px){
+@media(max-width: 519px) {
+  #about-block {
+    padding-top:5px;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  #random-facts {
+    min-height: 100px;
+  }
+
+  .quote-block {
+    text-align: left;
+  }
+
+  .paragraph-align {
+    padding-right: 7% !important;
+    padding-left: 7% !important;
+  }
+
+
+}
+
+
+@media(min-width: 520px) and (max-width: 759px){
 
   .color-block-logo-padding {
     padding-left: 150px;
   }
 
+  #about-block {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .quote-block-1 {
+    background-position: center left;
+  }
+
+  .quote-block {
+    text-align: right;
+  }
+
+
+
+  .paragraph-align {
+    padding-right: 15% !important;
+    padding-left: 15% !important;
+  }
+
 }
 
 
-@media(min-width: 750px) and (max-width: 900px){
-
-
+@media(min-width: 760px) and (max-width: 959px){
   #reSize{
     max-height:300px;
     min-height:300px;
+  }
+
+  .quote-block {
+    padding: 20% 2% 10% 2%;
+  }
+
+  .paragraph-align {
+    padding-right: 20% !important;
+    padding-left: 20% !important;
   }
 }
 
 
 
 
-@media(min-width: 1000px) and (max-width: 1300px){
+@media(min-width: 960px) and (max-width: 1300px){
   #reSize{
     height:100%;
   }

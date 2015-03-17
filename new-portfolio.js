@@ -1,4 +1,4 @@
-  $(document).ready(function () {
+$(document).ready(function () {
 
 
 $(window).scroll( function() {
@@ -7,6 +7,7 @@ $(window).scroll( function() {
       $("header").removeClass("light");
       $("#menu-list ul li a").addClass("white");
       $("#blue-sky").addClass("hide");
+      $("#change").addClass("black").removeClass("white");
 
     }
     else {
@@ -39,10 +40,23 @@ $(document).on("scroll", onScroll);
 });
 
 
+
+function coffeecount() {
+  var currentTime = new Date();
+  var month = currentTime.getMonth()+1;
+  var day = currentTime.getDate();
+  var cups = Math.floor((((month* 30)+(day-30))*4.5));
+  document.getElementById("#numberOfCoffees").innerHTML = "hecy";
+};
+
+window.onload = coffeecount();
+
+
+
  
 function onScroll(event){
 var scrollPosition = $(document).scrollTop();
-$('#menu-list a').each(function () {
+$('#menu-list ul').each(function () {
 var currentLink = $(this);
 var refElement = $(currentLink.attr("href"));
 if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
@@ -61,15 +75,10 @@ $(".circle").mouseenter(function() {
 });
 
 
-function coffeecount(){
-  var currentTime = new Date();
-  var month = currentTime.getMonth()+1;
-  var day = currentTime.getDate();
-  var cups = Math.floor((((month* 30)+(day-30))*4.5));
-  document.getElementById("numberOfCoffees").innerHTML=cups;
-};
 
-window.onload = coffeecount;
+
+
+
 
 /*
 $(window).scroll( function() {

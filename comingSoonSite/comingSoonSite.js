@@ -87,7 +87,7 @@ $(document).ready(function () {
       return futureFormattedDate
     }
   $("#countdown").countdown({
-    date: "15 December 2014 09:00:00", // Change this to your desired date to countdown to
+    date: "16 March 2015 09:00:00", // Change this to your desired date to countdown to
     format: "on"
   });
   });
