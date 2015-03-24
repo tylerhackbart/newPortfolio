@@ -20,23 +20,20 @@ $(window).scroll( function() {
 $(document).on("scroll", onScroll);
  
 $('a[href^="#"]').on('click', function (e) {
-e.preventDefault();
-
- 
-$('#menu-list a').each(function () {
-$(this).removeClass('frost');
-})
-$(this).addClass('frost');
- 
-var target = this.hash;
-$target = $(target);
-$('html, body').stop().animate({
-'scrollTop': $target.offset().top+2
-}, 500, 'swing', function () {
-window.location.hash = target;
-$(document).on("scroll", onScroll);
-});
-});
+  e.preventDefault();
+  $('#menu-list a').each(function () {
+  $(this).removeClass('frost');
+  })
+  $(this).addClass('frost');
+    var target = this.hash;
+    $target = $(target);
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top+2
+      }, 500, 'swing', function () {
+      window.location.hash = target;
+      $(document).on("scroll", onScroll);
+      });
+    });
 });
 
 
@@ -55,14 +52,14 @@ window.onload = coffeecount();
 
  
 function onScroll(event){
-var scrollPosition = $(document).scrollTop();
-$('#menu-list ul').each(function () {
-var currentLink = $(this);
-var refElement = $(currentLink.attr("href"));
-if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-$('#menu-list ul li a').removeClass("frost");
-currentLink.addClass("frost");
-}
+  var scrollPosition = $(document).scrollTop();
+  $('#menu-list ul').each(function () {
+    var currentLink = $(this);
+    var refElement = $(currentLink.attr("href"));
+  if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+  $('#menu-list ul li a').removeClass("frost");
+  currentLink.addClass("frost");
+  }
 });
 
 

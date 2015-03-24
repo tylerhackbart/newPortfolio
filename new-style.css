@@ -258,7 +258,6 @@ header {
 
 .quote-block {
   width:100%;
-  height:500px;
   text-align:center;
   padding: 10%;
 }
@@ -290,12 +289,11 @@ header {
 
  .quote-block-2 {
   width:100%;
-  height: 425px;
   background-color: #ee7942;
  }
 
  .quote-border-2 {
-  margin-top: 7em; border: 5px solid #FFFFFF; background: transparent;
+ border: 5px solid #FFFFFF; background: transparent;
  }
 
 .circle {
