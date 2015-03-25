@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
 
+
+
 $(window).scroll( function() {
     var value = $(this).scrollTop();
     if ( value < 275 ){
@@ -72,8 +74,11 @@ $(".circle").mouseenter(function() {
 });
 
 
+$('.collapse').collapse();
 
-
+$("#menu-list").on('navbar.collapse.in', function () {
+  $(this).css("background", "green");
+});
 
 
 
