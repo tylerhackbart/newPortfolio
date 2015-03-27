@@ -384,9 +384,22 @@ color: #7c8483; - grey
   padding-right: 0 !important;
 }
 
-.ordered {display: inline;}
-.footer-block {margin-top: 20px;padding-top: 3em;font-weight: 200; height: 250px;}
-.resume-button {padding: 10px;border: 2px solid #333333 !important;background-color: #FFFFFF;}
+.ordered {
+  display: inline;
+}
+
+.footer-block {
+  margin-top: 20px;
+  padding-top: 3em;
+  font-weight: 200;
+  height: 250px;
+}
+
+.resume-button {
+  padding: 10px;
+  border: 2px solid #333333 !important;
+  background-color: #FFFFFF;
+}
 
 .resume-button :hover {
   background-color: #393939 !important;
@@ -663,6 +676,13 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
     float: center;
   }
 
+  .footer-block {
+    margin-top: 2px;
+    padding-top: 2em;
+    height: auto;
+    padding-bottom: 2em;
+  }
+
 
 }
 
@@ -684,6 +704,13 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 
   .quote-block {
     text-align: right;
+  }
+
+  .footer-block {
+    margin-top: 2px;
+    padding-top: 2em;
+    height: auto;
+    padding-bottom: 2em;
   }
 
 
@@ -710,6 +737,15 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
     padding-right: 20% !important;
     padding-left: 20% !important;
   }
+
+  .footer-block {
+    margin-top: 2px;
+    padding-top: 2em;
+    height: auto;
+    padding-bottom: 2em;
+  }
+
+
 }
 
 
