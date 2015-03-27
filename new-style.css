@@ -116,7 +116,7 @@ header {
   width: 100%;
   background-color: #FFFFFF;
   text-align: center;
-  padding: 1em 20% 4em 20%;
+  padding: 4em 20% 4em 20%;
 }
 
 .paragraph-align {
@@ -327,14 +327,12 @@ header {
   color: #FFFFFF;
   text-align: center;
   font-family: 'Pathway Gothic One', sans-serif;
-  padding: 2em;
-
-
+  padding: 4em;
 }
 
 #random-facts div h1 {
   font-weight: 300;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   color: #7c8483;
 }
 /*
@@ -342,7 +340,7 @@ color: #7c8483; - grey
 */
 
 #random-facts div p {
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 1px;
   margin-top: -11px;
   color: #c77f25;
@@ -360,7 +358,7 @@ color: #7c8483; - grey
 #skills {
   background-color: #F8F8F8;
   width: 100%;
-  padding-bottom: 20px;
+  padding: 4em 0 3em 0;
 }
 
 .skills-circle {

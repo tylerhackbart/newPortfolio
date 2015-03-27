@@ -1,58 +1,20 @@
 $(document).ready(function () {
 
-
-
-
-$(window).scroll( function() {
+  $(window).scroll( function() {
     var value = $(this).scrollTop();
     if ( value < 275 ){
       $("header").removeClass("light");
       $("#menu-list ul li a").addClass("white");
       $("#blue-sky").addClass("hide");
       $("#change").addClass("black").removeClass("white");
-
-    }
-    else {
+    } else {
       $("header").addClass("light", 400);
       $("#menu-list ul li a").removeClass("white").addClass("black");
       $("#blue-sky").removeClass("hide");
     }
   });
 
-$(document).on("scroll", onScroll);
- 
-$('a[href^="#"]').on('click', function (e) {
-  e.preventDefault();
-  $('#menu-list a').each(function () {
-  $(this).removeClass('frost');
-  })
-  $(this).addClass('frost');
-    var target = this.hash;
-    $target = $(target);
-    $('html, body').stop().animate({
-      'scrollTop': $target.offset().top+2
-      }, 500, 'swing', function () {
-      window.location.hash = target;
-      $(document).on("scroll", onScroll);
-      });
-    });
-});
 
-
-
-function coffeecount() {
-  var currentTime = new Date();
-  var month = currentTime.getMonth()+1;
-  var day = currentTime.getDate();
-  var cups = Math.floor((((month* 30)+(day-30))*4.5));
-  document.getElementById("#numberOfCoffees").innerHTML = "hecy";
-};
-
-window.onload = coffeecount();
-
-
-
- 
 function onScroll(event){
   var scrollPosition = $(document).scrollTop();
   $('#menu-list ul').each(function () {
@@ -63,22 +25,53 @@ function onScroll(event){
   currentLink.addClass("frost");
   }
 });
+};
+
+
+  $(window).on("scroll", onScroll);
+
+
+  $('a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
+      $('#menu-list a').each(function () {
+        $(this).removeClass('frost');
+      });
+    $(this).addClass('frost');
+    var target = this.hash;
+    $target = $(target);
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top+2
+      }, 500, 'swing', function () {
+      window.location.hash = target;
+      $(document).on("scroll", onScroll);
+      });
+  });
+
+
+
+
+
+function coffeecount() {
+  var currentTime = new Date();
+  var month = currentTime.getMonth()+1;
+  var day = currentTime.getDate();
+  var cups = Math.floor((((month* 30)+(day-30))*4.5));
+  document.getElementById("numberOfCoffees").innerHTML = "Hey";
+};
+
+
+
 
 
 $(".circle").mouseenter(function() {
   $(this).css("background", "#FFFFFF");
   $(this).addClass("hover-blue");
-}). mouseleave(function() {
+}).mouseleave(function() {
   $(this).css("background", "transparent");
   $(this).removeClass("hover-blue");
 });
 
 
-$('.collapse').collapse();
-
-$("#menu-list").on('navbar.collapse.in', function () {
-  $(this).css("background", "green");
-});
 
 
 
@@ -167,4 +160,4 @@ $('a').click(function() {
 
 */
 
-};
+});
