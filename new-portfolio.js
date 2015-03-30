@@ -75,6 +75,7 @@ $(".circle").mouseenter(function() {
 
 
 
+
 /*
 $(window).scroll( function() {
     var value = $(this).scrollTop();

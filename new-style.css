@@ -126,6 +126,7 @@ header {
   padding-left: 30% !important;
   background-color:#027673;
   color:#FFFFFF;
+  padding-top: 3%;
 }
 
 .paragraph-align h1 {
@@ -373,6 +374,14 @@ color: #7c8483; - grey
   margin-top: 25%;
 }
 
+#skills-paragraph-1 {
+  text-align: right;
+}
+
+#skills-paragraph-2 {
+  text-align: left;
+}
+
 
 .photo-block {
   margin-left: auto;
@@ -391,8 +400,8 @@ color: #7c8483; - grey
 .footer-block {
   margin-top: 20px;
   padding-top: 3em;
+  padding-bottom: 3em;
   font-weight: 200;
-  height: 250px;
 }
 
 .resume-button {
@@ -615,7 +624,7 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 }
 
 #getintouch h1 {
-  padding-top: 2em; padding-bottom: 1em;
+  padding-top: 0.68em; padding-bottom: 1em;
 }
 
 .yellow {
@@ -653,6 +662,10 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 
 
 @media(max-width: 519px) {
+  #mainTitle {
+    margin-right: 7%;
+  }
+
   #about-block {
     padding-top:5px;
     padding-left: 3%;
@@ -670,6 +683,7 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
   .paragraph-align {
     padding-right: 7% !important;
     padding-left: 7% !important;
+    padding-top: 10%;
   }
 
   #menu-list ul {
@@ -682,6 +696,16 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
     height: auto;
     padding-bottom: 2em;
   }
+
+  #getintouch h1 {
+    padding-top: 1px; padding-bottom: 1em;
+  }
+
+  #skills-paragraph-1 {
+  text-align: left;
+}
+
+
 
 
 }
@@ -707,8 +731,6 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
   }
 
   .footer-block {
-    margin-top: 2px;
-    padding-top: 2em;
     height: auto;
     padding-bottom: 2em;
   }
@@ -724,6 +746,26 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 
 
 @media(min-width: 760px) and (max-width: 959px){
+  #random-facts {
+    padding-left: 2%;
+  }
+
+  #coffee-calculation {
+    padding-left:0;
+    padding-right: 0;
+  }
+
+  #code-calculation {
+    padding-left:0;
+    padding-right: 0;
+  }
+
+  #programming-calculation {
+    padding-left:0;
+    padding-right: 0;
+  }
+
+
   #reSize{
     max-height:300px;
     min-height:300px;
