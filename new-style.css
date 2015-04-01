@@ -196,7 +196,7 @@ header {
 }
 
 .color-block-logo-padding{
-  padding-left: 1em;
+  padding-left: 25%;
   padding-top: 1em;
 }
 
@@ -666,6 +666,10 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
     margin-right: 7%;
   }
 
+  .color-block-logo-padding {
+    padding-left: 0.5em;
+  }
+
   #about-block {
     padding-top:5px;
     padding-left: 3%;
@@ -714,7 +718,7 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 @media(min-width: 520px) and (max-width: 759px){
 
   .color-block-logo-padding {
-    padding-left: 150px;
+    padding-left: 1em;
   }
 
   #about-block {
@@ -746,6 +750,11 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 
 
 @media(min-width: 760px) and (max-width: 959px){
+
+  .color-block-logo-padding {
+    padding-left: 7%;
+  }
+
   #random-facts {
     padding-left: 2%;
   }
