@@ -752,7 +752,7 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 @media(min-width: 760px) and (max-width: 959px){
 
   .color-block-logo-padding {
-    padding-left: 7%;
+    padding-left: 8%;
   }
 
   #random-facts {
