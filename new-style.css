@@ -4,6 +4,13 @@ html, body {
   margin:0;
   padding: 0;
 }
+
+
+.col-xs-12 .col-sm-6 .col-md-4 .col-lg-4{
+  position: static !important;
+}
+
+
 .carousel, .item, .active {
   height:100%;
 }
@@ -371,7 +378,7 @@ color: #7c8483; - grey
   line-height: 75px;
   text-align: center;
   background: #4682B4;
-  margin-top: 25%;
+  margin-top: 15%;
 }
 
 #skills-paragraph-1 {
@@ -680,6 +687,10 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
     min-height: 100px;
   }
 
+  #skills-paragraph-2 {
+    padding-left: 2px;
+  }
+
   .quote-block {
     text-align: left;
   }
@@ -708,6 +719,10 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
   #skills-paragraph-1 {
   text-align: left;
 }
+
+#skills-circle  {
+    margin-left: 15%;
+  }
 
 
 
@@ -744,6 +759,14 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
   .paragraph-align {
     padding-right: 15% !important;
     padding-left: 15% !important;
+  }
+
+  #skills-paragraph-1 {
+  text-align: left;
+}
+
+#skills-circle  {
+    margin-left: 15%;
   }
 
 }
@@ -794,6 +817,10 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
     padding-top: 2em;
     height: auto;
     padding-bottom: 2em;
+  }
+
+  #skills-circle  {
+    margin-left: 15%;
   }
 
 
