@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
-  $(window).scroll( function() {
+
+  $(window).on("load resize scroll", function() {
     var value = $(this).scrollTop();
     if ( value < 275 ){
       $("header").removeClass("light");
@@ -14,7 +15,11 @@ $(document).ready(function () {
     }
   });
 
-
+$("#change").on("click scroll", function () {
+    $("header, .navbar-fixed-top").toggleClass("mobile-navbar-shadow");
+    var value = $(this).scrollTop();
+    var frame = Math.round(value /1000);
+});
 
 
 function onScroll(event){

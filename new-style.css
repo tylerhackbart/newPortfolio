@@ -65,6 +65,11 @@ html, body {
   margin-right: 10%;
 }
 
+.mobile-navbar-shadow {
+  background-color:#f5f5f5;
+  opacity: 0.9;
+}
+
 body {
   font-weight: 400;
 }
