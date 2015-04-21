@@ -374,6 +374,7 @@ color: #7c8483; - grey
   background-color: #F8F8F8;
   width: 100%;
   padding: 4em 0 3em 0;
+  margin: 0 !important;
 }
 
 .skills-circle {
@@ -728,7 +729,7 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 }
 
 #skills-circle  {
-    margin-left: 15%;
+    margin-left: 25%;
   }
 
 
@@ -763,8 +764,6 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
     padding-bottom: 2em;
   }
 
-
-
   .paragraph-align {
     padding-right: 15% !important;
     padding-left: 15% !important;
@@ -772,14 +771,16 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 
   #skills-paragraph-1 {
   text-align: left;
-}
+  }
 
-#skills-circle  {
+  #skills-circle  {
     margin-left: 15%;
   }
   #works {
     height: 900px;
   }
+
+
 
 }
 
@@ -808,6 +809,7 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
     padding-left:0;
     padding-right: 0;
   }
+
 
 
   #reSize{
@@ -852,6 +854,11 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
   width: 100%;
   max-height:250px;
   }
+
+  #skills-paragraph-2 {
+    padding-left: 1.5em;
+  }
+
 }
 
 @media(min-width: 1400px) and (max-width: 1600px){

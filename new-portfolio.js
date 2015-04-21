@@ -79,7 +79,12 @@ $(".circle").mouseenter(function() {
 });
 
 
-
+$(window).width( function () {
+  var value = $(this);
+  if (value > 600) {
+    $("#crown").removeClass("col-xs-offset-1 col-xs-2").addClass("col-xs-3");
+  }
+})
 
 
 
