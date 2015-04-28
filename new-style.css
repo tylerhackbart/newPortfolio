@@ -780,7 +780,13 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
     height: 900px;
   }
 
+  #skills {
+    padding-left: 10%;
+  }
 
+  #skills .col-md-12 .titleBlock {
+    padding-right: 10% !important;
+  }
 
 }
 
