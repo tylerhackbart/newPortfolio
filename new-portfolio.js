@@ -21,38 +21,54 @@ $("#change").on("click scroll", function () {
     var frame = Math.round(value /1000);
 });
 
-
-function onScroll(event){
-  var scrollPosition = $(document).scrollTop();
-  $('#menu-list ul').each(function () {
-    var currentLink = $(this);
-    var refElement = $(currentLink.attr("href"));
-  if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-  $('#menu-list ul li a').removeClass("frost");
-  currentLink.addClass("frost");
-  }
+$(".circle").mouseenter(function() {
+  $(this).css("background", "#FFFFFF");
+  $(this).addClass("hover-blue");
+}).mouseleave(function() {
+  $(this).css("background", "transparent");
+  $(this).removeClass("hover-blue");
 });
-};
 
 
-  $(window).on("scroll", onScroll);
+    $(document).on("scroll", onScroll);
 
+    $('a[href^="#"]').on('click', function (e) {
+      e.preventDefault();
+      $(document).off("scroll");
 
-  $('a[href^="#"]').on('click', function (e) {
-    e.preventDefault();
       $('#menu-list a').each(function () {
         $(this).removeClass('frost');
-      });
-    $(this).addClass('frost');
-    var target = this.hash;
-    $target = $(target);
-    $('html, body').stop().animate({
-      'scrollTop': $target.offset().top+2
+      })
+      $(this).addClass('frost');
+
+      var target = this.hash;
+      $target = $(target);
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top+2
       }, 500, 'swing', function () {
-      window.location.hash = target;
-      $(document).on("scroll", onScroll);
+        window.location.hash = target;
+        $(document).on("scroll", onScroll);
       });
-  });
+    });
+
+
+});
+
+function onScroll(event){
+    var scrollPosition = $(document).scrollTop();
+    $('#menu-list a').each(function () {
+      var currentLink = $(this);
+      var refElement = $(currentLink.attr("href"));
+      if ( refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+        $('#menu-list ul li a').removeClass("frost");
+        currentLink.addClass("frost");
+      }
+      else{
+        currentLink.removeClass("frost");
+      }
+    });
+  }
+
 
 
 
@@ -63,20 +79,13 @@ function coffeecount() {
   var month = currentTime.getMonth()+1;
   var day = currentTime.getDate();
   var cups = Math.floor((((month* 30)+(day-30))*4.5));
-  document.getElementById("numberOfCoffees").innerHTML = "Hey";
+  document.getElementById("numberOfCoffees").innerHTML = cups;
 };
 
 
 
 
 
-$(".circle").mouseenter(function() {
-  $(this).css("background", "#FFFFFF");
-  $(this).addClass("hover-blue");
-}).mouseleave(function() {
-  $(this).css("background", "transparent");
-  $(this).removeClass("hover-blue");
-});
 
 
 
@@ -167,4 +176,4 @@ $('a').click(function() {
 
 */
 
-});
+

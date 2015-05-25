@@ -26,13 +26,14 @@ html, body {
 
 .carousel .carousel-inner .bg {
   background-repeat:no-repeat;
-  -webkit-transition: 1.5s ease-in-out left;
-  transition: 1.5s ease-in-out left;
-  -webkit-transition: 1.5s, ease-in-out, left;
-  -moz-transition: 1.5s, ease-in-out, left;
-  -o-transition: 1.5s, ease-in-out, left;
-  transition: 1.5s, ease-in-out, left;
   background-size:cover;
+  -webkit-transition: 1.25s ease-in-out left;
+  transition: 1.25s ease-in-out left;
+  -webkit-transition: 1.25s, ease-in-out, left;
+  -moz-transition: 1.25s, ease-in-out, left;
+  -o-transition: 1.25s, ease-in-out, left;
+  transition: 1.25s, ease-in-out, left;
+
 }
 .carousel .carousel-inner .bg1 {
   background-image:url(images/tyler-main-2.jpg);
