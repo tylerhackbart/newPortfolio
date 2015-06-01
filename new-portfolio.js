@@ -13,6 +13,7 @@ $(document).ready(function () {
       $("#menu-list ul li a").removeClass("white").addClass("black");
       $("#blue-sky").removeClass("hide");
     }
+
   });
 
 $("#change").on("click scroll", function () {
@@ -69,18 +70,13 @@ function onScroll(event){
     });
   }
 
-
-
-
-
-
-function coffeecount() {
+$(function coffeecount() {
   var currentTime = new Date();
   var month = currentTime.getMonth()+1;
   var day = currentTime.getDate();
-  var cups = Math.floor((((month* 30)+(day-30))*4.5));
+  var cups = Math.floor((((month* 30)+(day-30))*6));
   document.getElementById("numberOfCoffees").innerHTML = cups;
-};
+});
 
 
 

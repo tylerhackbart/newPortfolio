@@ -268,7 +268,7 @@ header {
   letter-spacing: 2px;
   font-weight: 100;
   text-align: center;
-  padding-bottom: 1em;
+  padding-bottom: 1.5em;
 
 }
 
@@ -447,6 +447,7 @@ color: #7c8483; - grey
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 15px;
+  padding-top:2em;
 }
 
 /*
@@ -583,39 +584,38 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 }
 
 .node-language {
-  border: 1px solid green !important; color: green; background: #FFFFFF;
-}
+  border: 1px solid green !important; color: green; background: #FFFFFF; margin-bottom: 10px !important;}
 
 .html-language {
-  border: 1px solid orange !important; color: orange; background: #FFFFFF;
+  border: 1px solid orange !important; color: orange; background: #FFFFFF; margin-bottom: 10px !important;
 }
 
 .css-language {
-  border: 1px solid red !important; color: red; background: #FFFFFF;
+  border: 1px solid red !important; color: red; background: #FFFFFF; margin-bottom: 10px !important;
 }
 
 .jquery-language {
-  border: 1px solid blue !important; color: blue; background: #FFFFFF;
+  border: 1px solid blue !important; color: blue; background: #FFFFFF;  margin-bottom: 10px !important;
 }
 
 .php-language {
-  border: 1px solid purple !important; color: purple; background: #FFFFFF;
+  border: 1px solid purple !important; color: purple; background: #FFFFFF; margin-bottom: 10px !important;
 }
 
 .xml-language {
-  border: 1px solid #6B8E23 !important; color: #6B8E23; background: #FFFFFF; margin-bottom: 10px;
+  border: 1px solid #6B8E23 !important; color: #6B8E23; background: #FFFFFF; margin-bottom: 10px !important;
 }
 
 .ruby-language {
-  border: 1px solid red !important; color: red; background: #FFFFFF; margin-bottom: 10px;
+  border: 1px solid red !important; color: red; background: #FFFFFF; margin-bottom: 10px !important;
 }
 
 .objectivec-language {
-  border: 1px solid #00688B !important; color: #00688B; background: #FFFFFF; margin-bottom: 10px;
+  border: 1px solid #00688B !important; color: #00688B; background: #FFFFFF; margin-bottom: 10px !important;
 }
 
 .swift-language {
-  border: 1px solid #FF2400 !important; color: #FF2400; background: #FFFFFF; margin-bottom: 10px;
+  border: 1px solid #FF2400 !important; color: #FF2400; background: #FFFFFF; margin-bottom: 10px !important;
 }
 
 #photography-modal {
@@ -714,6 +714,11 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
     float: center;
   }
 
+  #contact-side {
+    text-align: center;
+    padding-left: 0;
+  }
+
   .footer-block {
     margin-top: 2px;
     padding-top: 2em;
@@ -733,6 +738,10 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
     margin-left: 25%;
   }
 
+
+#getintouch .titleBlock {
+    margin-top: 10px;
+  }
 
 
 
@@ -760,6 +769,11 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
     text-align: right;
   }
 
+  #contact-side {
+    text-align: center;
+    padding-left: 0;
+  }
+
   .footer-block {
     height: auto;
     padding-bottom: 2em;
@@ -778,7 +792,7 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
     margin-left: 15%;
   }
   #works {
-    height: 900px;
+    height: 850px;
   }
 
   #skills {
@@ -787,6 +801,10 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 
   #skills .col-md-12 .titleBlock {
     padding-right: 10% !important;
+  }
+
+  #getintouch .titleBlock {
+    margin-top: 10px;
   }
 
 }
@@ -817,6 +835,15 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
     padding-right: 0;
   }
 
+  #contact-side {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  #contact-side ul li {
+    display:inline-table;
+    padding: 10px;
+  }
 
 
   #reSize{
