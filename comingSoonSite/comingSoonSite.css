@@ -1,6 +1,6 @@
 body {background-color: #F0F0F0;}
-#myCarousel {padding-bottom: 0;}
-#main-photo {-webkit-filter: blur(12px);background-position: left top;}
+#main {padding-bottom: 0;}
+#main-photo {background-image: laptop.jpg;-webkit-filter: blur(12px);background-position: left top;}
 #menu-list h2 {float: right;margin-right: 5%;padding-top: 7px;font-weight: 200;}
 #mainTitle {position: relative;top:-80%;color: white;text-align: center;}
 #mainTitle h1 {font-weight: 100;font-size: 64px;text-align: center;}

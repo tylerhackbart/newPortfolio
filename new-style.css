@@ -196,6 +196,29 @@ header {
   color: #000000;
 }
 
+.color-yellow {
+  color: #FBB039;
+}
+
+.color-blue {
+  color: #5082B6;
+}
+
+.color-red {
+  color:#CD3B2B;
+}
+
+.background-color-yellow {
+  background-color: #FBB039 !important;
+}
+
+.background-color-blue {
+  background-color: #5082B6;
+}
+
+.background-color-red {
+  background-color: #CD3B2B;
+}
 
 
 .headerNav {
@@ -252,7 +275,27 @@ header {
 
 #mainTitle a button {
   text-decoration: none;
+  width: 165px;
+  height: 50px;
+  opacity: 0.9;
+  color: #FFFFFF;
 }
+
+
+
+
+
+#mainTitle #about-block button h4 {
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.button-block-span-01 {
+  width: 5px;
+}
+
+
+
 
 
 #socialNetworks {

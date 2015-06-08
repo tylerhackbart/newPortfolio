@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+/*
+  Controlling the carousel by using .carousel(on) but if the screen is less than 400px as a width, just create a random photo out of all three
+
+*/
 
   $(window).on("load resize scroll", function() {
     var value = $(this).scrollTop();
