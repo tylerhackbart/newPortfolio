@@ -721,6 +721,19 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 
 
 @media(max-width: 519px) {
+
+  #header-blocks-responsive {
+    padding: 0;
+    margin: 0;
+  }
+
+  #header-blocks-responsive div {
+    height: 20px;
+    padding:0 !important;
+    margin:0 !important;
+  }
+
+
   #mainTitle {
     margin-right: 7%;
   }

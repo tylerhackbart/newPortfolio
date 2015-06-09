@@ -5,6 +5,17 @@ $(document).ready(function () {
 
 */
 
+  $(window).on("resize"), function() {
+    var value = $(this).innerWidth;
+    if (value < 400px) {
+      $("menu-list").addClass("hidden");
+      $("navbar-header").addClass("hidden");
+    } else {
+      $("menu-list").removeClass("hidden");
+      $("navbar-header").removeClass("hidden");
+    }
+  }
+
   $(window).on("load resize scroll", function() {
     var value = $(this).scrollTop();
     if ( value < 275 ){
