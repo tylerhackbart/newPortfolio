@@ -718,20 +718,13 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
   text-decoration: underline;
 }
 
+#header-blocks-responsive {
+  visibility: hidden;
+}
 
 
 @media(max-width: 519px) {
 
-  #header-blocks-responsive {
-    padding: 0;
-    margin: 0;
-  }
-
-  #header-blocks-responsive div {
-    height: 20px;
-    padding:0 !important;
-    margin:0 !important;
-  }
 
 
   #mainTitle {
@@ -802,6 +795,26 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 
 
 
+
+}
+
+@media(max-width: 676px) {
+
+  #header-blocks-responsive {
+    padding: 0;
+    margin: 0;
+    visibility: visible;
+  }
+
+  #header-blocks-responsive div {
+    height: 20px;
+    padding:0 !important;
+    margin:0 !important;
+  }
+
+  #side-blocks {
+    display: none !important;
+  }
 
 }
 

@@ -12,7 +12,7 @@
       if(mail($to, $subject, $body, $from)) {
         echo '<p>Your Message has been sent!</p>';
       } else {
-        echo '<p>Something went wrong, go bacj and try again.</p>';
+        echo '<p>Something went wrong, go back and try again.</p>';
       }
     }
 ?>
