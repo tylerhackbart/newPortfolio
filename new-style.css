@@ -38,22 +38,20 @@ html, body {
 .carousel .carousel-inner .bg1 {
   background-image:url(images/tyler-main-2.jpg);
   background-position: left top;
-  background-attachment : fixed;
+  background-attachment: scroll;
 }
 
 
 .carousel .carousel-inner .bg2 {
   background-image:url(images/image1.jpg);
   background-position: center center;
-  background-attachment : fixed;
+  background-attachment: scroll;
 }
 .carousel .carousel-inner .bg3 {
   background-image:url(images/IMG_0334.jpg);
   background-position: center left;
   -webkit-filter: grayscale(1) invert(0.1);
-  background-attachment : fixed;
-}
-.navbar {
+  background-attachment: scroll;
 }
 
 .navbar-extra {
@@ -249,9 +247,20 @@ header {
   text-align: center;
 }
 
-#code-link {
-  color: #027673 !important;
+#codeLink {
+  border: 2px solid #F7F7F7 !important;
+  background-color: transparent;
+  border-radius: 1px !important;
+  text-decoration: none;
+  margin:2px;
 }
+
+.code-link p {
+  color: #f2f2f2;
+  line-height:50%;
+  margin: 6px !important;
+}
+
 
 #mainTitle {
   position: relative;
@@ -464,15 +473,21 @@ color: #7c8483; - grey
   font-weight: 200;
 }
 
-.resume-button {
-  padding: 10px;
-  border: 2px solid #333333 !important;
-  background-color: #FFFFFF;
+#resumeButton {
+  border: 2px solid #000000 !important;
+  background-color: transparent;
+  border-radius: 1px !important;
+  margin:2px;
 }
 
-.resume-button :hover {
-  background-color: #393939 !important;
+.resume-button p {
+  color: #000000;
+  line-height:50%;
+  margin: 6px !important;
 }
+
+
+
 
 #modal-content p{
   padding-left: 5%;
@@ -723,7 +738,7 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 }
 
 
-@media(max-width: 519px) {
+@media screen and (max-width: 519px), only screen and (-webkit-min-device-pixel-ratio: 2) {
 
 
 
@@ -743,10 +758,6 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 
   #random-facts {
     min-height: 100px;
-  }
-
-  #skills-paragraph-2 {
-    padding-left: 2px;
   }
 
   .quote-block {
@@ -799,6 +810,10 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 }
 
 @media(max-width: 676px) {
+
+  #header {
+    height:0;
+  }
 
   #header-blocks-responsive {
     padding: 0;

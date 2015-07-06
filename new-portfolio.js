@@ -13,7 +13,25 @@ $(document).ready(function () {
   });
 
 
+  $("#resumeButton").mouseenter(function() {
+    $(this).css("background-color","black");
+    $(".resume-button p").css("color","white");
+    $("#file-icon").addClass("hide", 4000, "fade");
+    $("#download-icon").removeClass("hide");
+  }).mouseleave(function() {
+    $(this).css("background-color","white", 4000);
+    $(".resume-button p").css("color","black");
+    $("#download-icon").addClass("hide");
+    $("#file-icon").removeClass("hide");
+  });
 
+  $("#codeLink").mouseenter(function() {
+    $(this).css("background-color","#f2f2f2");
+    $(".code-link p").css("color","#027673");
+  }).mouseleave(function() {
+    $(this).css("background-color","transparent");
+    $(".code-link p").css("color","#f2f2f2");
+  });
 
 
 
