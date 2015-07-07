@@ -288,6 +288,7 @@ header {
   height: 50px;
   opacity: 0.9;
   color: #FFFFFF;
+  margin-bottom: 10px;
 }
 
 
@@ -335,6 +336,7 @@ header {
   color: #F8F8F8;
   font-weight: 100;
   line-height: 40px;
+  opacity: 125;
 }
 
 .quote-person {
@@ -348,11 +350,16 @@ header {
   background-color: #D8D8Bf;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -khtml-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
  }
 
  .quote-border-1 {
     border: 5px solid #FFFFFF;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.5)
  }
 
  .quote-block-2 {
@@ -373,6 +380,7 @@ header {
   border: 3px solid #FFFFFF;
   display: inline-block;
   margin-left: 25px;
+  margin-bottom: 25px;
   color: #FFFFFF !important;
 }
 
@@ -743,15 +751,25 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 
 
   #mainTitle {
-    margin-right: 7%;
+    margin-right: 4%;
   }
+
+  #mainTitle h1 {
+    font-size: 42px;
+    font-weight: 200;
+    opacity:0.9;
+  }
+  #mainTitle h2 {
+    color: #d6d6d6;
+    font-size: 24px;
+  }
+
 
   .color-block-logo-padding {
     padding-left: 0.5em;
   }
 
   #about-block {
-    padding-top:5px;
     padding-left: 3%;
     padding-right: 3%;
   }
@@ -822,13 +840,41 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
   }
 
   #header-blocks-responsive div {
-    height: 20px;
+    height: 12px;
     padding:0 !important;
     margin:0 !important;
   }
 
   #side-blocks {
     display: none !important;
+  }
+
+  #circle-info {
+    margin: 0 10% 25px 10%;
+  }
+
+ .middle-social {
+    margin: 0 25% 25px 25% !important;
+  }
+
+  #skills div {
+    padding-right: 0px !important;
+    padding-left: 5px !important;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .titleBlock {
+    padding-bottom: 0.75em !important;
+  }
+
+  #getintouch div {
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+  }
+
+  #submit {
+    width: 100%;
   }
 
 }
