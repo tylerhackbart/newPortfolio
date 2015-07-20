@@ -341,8 +341,8 @@ header {
 
 .quote-person {
   padding-bottom: 30px;
-  color: #228B22;
-  font-weight: 100;
+  color: #389638;
+  font-weight: 200;
 }
 
  .quote-block-1 {
@@ -359,7 +359,7 @@ header {
 
  .quote-border-1 {
     border: 5px solid #FFFFFF;
-    background: rgba(0,0,0,0.5)
+    background: rgba(0,0,0,0.60)
  }
 
  .quote-block-2 {
@@ -726,7 +726,7 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 }
 
 #twitter-section {
- width:100%; background-color:#4099FF; text-align: center; color: #FFFFFF; padding: 25px 0px 10px 0px;
+ width:100%; background-color:#4099FF; text-align: center; color: #FFFFFF; padding: 25px 5px 10px 5px;
 }
 
 .twitter-post {
@@ -749,13 +749,16 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 @media screen and (max-width: 519px), only screen and (-webkit-min-device-pixel-ratio: 2) {
 
 
+  .carousel-indicators {
+    display: none;
+  }
 
   #mainTitle {
     margin-right: 4%;
   }
 
   #mainTitle h1 {
-    font-size: 42px;
+    font-size: 45px;
     font-weight: 200;
     opacity:0.9;
   }
@@ -770,6 +773,7 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
   }
 
   #about-block {
+    padding-top: 5px;
     padding-left: 3%;
     padding-right: 3%;
   }
@@ -810,6 +814,14 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 
   #skills-paragraph-1 {
   text-align: left;
+  text-align: justify;
+    text-justify: inter-word;
+}
+
+#skills-paragraph-2 {
+  text-align: left;
+  text-align: justify;
+    text-justify: inter-word;
 }
 
 #skills-circle  {
@@ -821,13 +833,73 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
     margin-top: 10px;
   }
 
+    #header {
+    height:0;
+  }
+
+  #header-blocks-responsive {
+    padding: 0;
+    margin: 0;
+    visibility: visible;
+  }
+
+  #header-blocks-responsive div {
+    height: 12px;
+    padding:0 !important;
+    margin:0 !important;
+  }
+
+  #side-blocks {
+    display: none !important;
+  }
+
+  #circle-info {
+    margin: 0 10% 25px 10%;
+  }
+
+ .middle-social {
+    margin: 0 25% 25px 25% !important;
+  }
+
+  #skills div {
+    padding-right: 0px !important;
+    padding-left: 5px !important;
+  }
+
+  .titleBlock {
+    padding-bottom: 0.75em !important;
+  }
+
+  #getintouch div {
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+  }
+
+  #submit {
+    width: 100%;
+  }
+
+
+
 
 
 
 
 }
 
-@media(max-width: 676px) {
+@media(max-width: 676px) only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 18px !important;
+  }
+
+  p {
+    font-size: 18px !important;
+  }
+
+  .lead {
+    font-size: 20px !important;
+  }
 
   #header {
     height:0;
@@ -860,8 +932,6 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
   #skills div {
     padding-right: 0px !important;
     padding-left: 5px !important;
-    text-align: justify;
-    text-justify: inter-word;
   }
 
   .titleBlock {
@@ -881,6 +951,7 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 
 
 @media(min-width: 520px) and (max-width: 759px){
+
 
   .color-block-logo-padding {
     padding-left: 1em;
@@ -941,6 +1012,19 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 
 
 @media(min-width: 760px) and (max-width: 959px){
+
+  body {
+    font-size: 18px !important;
+  }
+
+  p {
+    font-size: 18px !important;
+  }
+
+  .lead {
+    font-size: 20px !important;
+  }
+
 
   .color-block-logo-padding {
     padding-left: 8%;
