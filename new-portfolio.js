@@ -78,98 +78,10 @@ $(function coffeecount() {
   document.getElementById("numberOfCoffees").innerHTML = cups;
 });
 
-
-
-
-
-
-
-
-
-
-/*
-$(window).scroll( function() {
-    var value = $(this).scrollTop();
-    if ( value < 375 ){
-      $("header").removeClass("light");
-      $("#menu-list ul li a").addClass("white");
-    }
-    else {
-      $("header").addClass("light", 400);
-      $("#menu-list ul li a").removeClass("white").addClass("black");
-    }
-  });
-
-$('.parallax-window').parallax({imageSrc: 'images/tyler-main-2.jpg'});
-*/
-
-
-/*
-$(document).scroll(function() {
-  var navTop = $("#nav").offset();
-  var navHeight = $("#nav").height();
-  var windowH = $(window).height();
-
-  $('.section').height(windowH);
-  var st = $(this).scrollTop();
-
-});
-
-
-
-    
-    //for the nav bar:
-if(st > navTop ){
-$('#nav').addClass('fix');
-$('.section:eq(0)').css({'margin-top':navHeight});//fix  scrolling issue due to the fix nav bar
-}else{
-$('#nav').removeClass('fix');
-$('.section:eq(0)').css({'margin-top':'0'});
-}
-    
-$('.section').each(function(index, element) {
-if(st + navHeight > $(this).offset().top && st + navHeight  <= $(this).offset().top + $(this).height()  ){
-$(this).addClass('active');
-            
-            var id = $(this).attr('id');
-            $('a[href="#'+id+'"]').parent('li').addClass('active');
-// or $('#nav li:eq('+index+')').addClass('active');
-}else{
-$(this).removeClass('active');
-            
-            var id = $(this).attr('id');
-            $('a[href="#'+id+'"]').parent('li').removeClass('active');
-//or $('#nav li:eq('+index+')').removeClass('active');
+function deleteEverything() {
+  $('body').hide();
 }
 
-});
 
-});
-};
-*/
-/*
-
-
-
-
-  $('#myCarousel').carousel();
-$("#playButton").click(function() {
-    $("#myCarousel").carousel("cycle");
-});
-$("#pauseButton").click(function() {
-    $("#myCarousel").carousel("pause");
-});
-
-
-
-
-$('a').click(function() {
-    var elementClicked = $(this).attr("href");
-    var destination = $(elementClicked).offset().top;
-    $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination-15}, 500);
-});
-
-
-*/
 
 
