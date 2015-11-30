@@ -17,3 +17,5 @@ Next Instalment: (Expected Spring 2016)
 - Using my own API
 - Showing off using other API's 
 - My Own Style Sheet
+- Adding in timelines for everything
+- Tablet version - different layout
