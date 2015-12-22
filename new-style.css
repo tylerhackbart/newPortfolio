@@ -5,6 +5,16 @@ html, body {
   padding: 0;
 }
 
+.graph_section h4 {
+  font-weight: 200;
+  font-size: 20px;
+  text-align: center;
+}
+
+.graph_section p {
+  padding: 10px;
+}
+
 
 .col-xs-12 .col-sm-6 .col-md-4 .col-lg-4{
   position: static !important;
