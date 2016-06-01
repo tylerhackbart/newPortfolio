@@ -63,8 +63,6 @@ html, body {
   -webkit-filter: grayscale(1) invert(0.1);
   background-attachment : fixed;
 }
-.navbar {
-}
 
 .navbar-extra {
   margin-top:0px;
@@ -81,6 +79,17 @@ html, body {
   opacity: 0.9;
 }
 
+.no_decoration_a {
+  text-decoration: none !important;
+  color: #F0F0F0; 
+  font-weight: 300;
+}
+
+.no_decoration_a:hover {
+  text-decoration: none !important;
+  color: #F0F0F0; 
+  background-color: #6BB0FF;
+}
 
 
 body {
@@ -683,7 +692,8 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 }
 
 .twitter-post {
-  color: #F0F0F0; font-weight: 300;
+  color: #F0F0F0; 
+  font-weight: 300;
 }
 
 .twitter-date {
@@ -691,7 +701,7 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 }
 
 .underline-decoration {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 
