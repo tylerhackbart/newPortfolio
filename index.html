@@ -6,13 +6,15 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="new-style.css">
     <link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Palanquin:200' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Krona+One' rel='stylesheet' type='text/css'>
    <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!--     // <script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script> -->
     <script type="text/javascript" src="new-portfolio.js"></script>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -25,7 +27,7 @@
       <div class="container-fluid">
        <div class="navbar-header">
             <button type="button" class="navbar-toggle navbar-extra" data-toggle="collapse" data-target="#menu-list">
-              <i id="change"class="fa fa-bars fa-2x white"></i>
+             <!--  <i id="change"class="fa fa-bars fa-2x white"></i> -->
             </button>
             <span class="color-block-logo-padding">
             <img href="#"class="topheadersquares"src="images/yellowblock.jpg">
@@ -489,7 +491,6 @@
         </ul>
     </div>
     <div class="col-md-8">
-      <form id="ajax-contact" method="post" action="new-portfolio.php">
         <div class="col-md-5">
           <input type="text" id="name" placeholder="Name*" name="name" required/>
         </div>
@@ -499,13 +500,24 @@
         <div class="col-md-10">
           <input type="text" id="subject" placeholder="Subject" name="subject" />
           <textarea id="message" placeholder="Message*" name="message"></textarea>
-          <button id="submit" name="submit" type="submit" class="lead" value="submit"> Send Message</button>
-        </div>
-      </form>
-      <div id="form-messages"></div>
+          <button id="ButtonSubmit" class="lead" onclick='areYouHuman();'> Send Message</button>
+<div id="HumanPopUp" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      Are Your Human
+      <button type='reset'>No</button><button >Yes</button> <button > Send Message</button>
     </div>
   </div>
 </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div style="width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 1000; position:fixed; top:0; display:block; left:0;" >
+  <h1 style="color: #FFFFFF;">Hello</h1>
+
+</div> -->
 
 <div id="twitter-section" class="col-md-12 col-xs-12">
 <div class="twitter-icon">

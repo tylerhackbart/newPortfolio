@@ -115,6 +115,18 @@ function deleteEverything() {
   $('body').hide();
 }
 
+function areYouHuman() {
+$('body').addClass('stop-scrolling');
+var name = $('#name').val();
+var email = $('#email').val();
+var subject = $('#subject').val();
+var message = $('#message').val();
+$('#HumanPopUp').modal('toggle');
+
+};
+
+
+
 $(function() {
     var form = $('#ajax-contact');
     var formMessages = $('#form-messages');
