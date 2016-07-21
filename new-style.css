@@ -779,7 +779,7 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 .button_general_human {
   width: 50%; 
   height: 50px;
-  border-top: 0.15px solid #4682B4;
+  border-top: 0.25px solid #4682B4;
 }
 
 .button_general_human:hover {
@@ -789,19 +789,19 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 .button_general_human p {
   bottom: 0; 
   text-align: center; 
-  padding-top: 15px;
+  padding-top: 7%;
 }
 
 .button_cancel_human {
   border-bottom-left-radius: 7px; 
   -moz-border-radius-bottomleft: 7px; 
   -webkit-border-bottom-left-radius: 7px;
-  border-right: 0.15px solid #4682B4;
+  border-right: 0.25px solid #4682B4;
 }
 
 .button_cancel_human:hover {
-  border-left: 0.15px solid #FFFFFF;
-  border-bottom: 0.15px solid #FFFFFF;
+  border-left: 0.25px solid #FFFFFF;
+  border-bottom: 0.25px solid #FFFFFF;
 }
 
 
@@ -812,8 +812,8 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 }
 
 .button_send_human:hover {
-  border-right: 0.15px solid #FFFFFF;
-  border-bottom: 0.15px solid #FFFFFF;
+  border-right: 0.25px solid #FFFFFF;
+  border-bottom: 0.25px solid #FFFFFF;
 }
 
 
