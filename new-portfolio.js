@@ -1,4 +1,14 @@
 $(document).ready(function () {
+  var name = "undefined";
+  var email = "undefined";
+  var subject = "undefined";
+  var message = "undefined";
+
+  $('#send_email').click(function(){
+    $('#replacementOnceSent').html('<button id="Submit_sent" class="lead red_main_block submitButtonShape"> Sent Message To Tyler</button>')
+    removedNotification();
+  });
+
 
 
   $(window).on("load resize scroll", function() {
@@ -114,61 +124,54 @@ $(function coffeecount() {
 function deleteEverything() {
   $('body').hide();
 }
-
+// working on validate for emails
 function areYouHuman() {
 $('body').addClass('stop-scrolling');
-var name = $('#name').val();
-var email = $('#email').val();
-var subject = $('#subject').val();
-var message = $('#message').val();
-$('#HumanPopUp').modal('toggle');
+  name = $('#name').val();areYouHuman
 
+  email = $('#email').val();
+
+    var x = email
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        $('#email').addClass("error_empty");
+        return false;
+    }
+
+  subject = $('#subject').val();
+  message = $('#message').val();
+  $('#pop_up_human').show();
+
+  $('#send_email').attr("href", "mailto:t.hackbart@gmail.com?Subject="+ subject +'&body= Hello my name is '+ name + ' %0D%0A %0D%0A'+ message + ' %0D%0A %0D%0A My email is '+ email);
 };
 
 
+function clearOut() {
+  $('#name').val('');
+  $('#email').val('');
+  $('#subject').val('');
+  $('#message').val('');
+  $('#email').removeClass("error_empty");
+  removedNotification();
+};
 
-$(function() {
-    var form = $('#ajax-contact');
-    var formMessages = $('#form-messages');
-});
 
-$(form).submit(function(event) {
-    event.preventDefault();
-});
+function removedNotification() {
+  $('body').removeClass('stop-scrolling');
+  $('#pop_up_human').hide();
+}
 
-var formData = $(form).serialize();
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-$.ajax({
-    type: 'POST',
-    url: $(form).attr('action'),
-    data: formData
-})
-.done(function(response) {
-    // Make sure that the formMessages div has the 'success' class.
-    $(formMessages).removeClass('error');
-    $(formMessages).addClass('success');
+ga('create', 'UA-79746998-1', 'auto');
+ga('send', 'pageview');
 
-    // Set the message text.
-    $(formMessages).text(response);
 
-    // Clear the form.
-    $('#name').val('');
-    $('#email').val('');
-    $('#subject').val('');
-    $('#message').val('');
-})
-.fail(function(data) {
-    // Make sure that the formMessages div has the 'error' class.
-    $(formMessages).removeClass('success');
-    $(formMessages).addClass('error');
 
-    // Set the message text.
-    if (data.responseText !== '') {
-        $(formMessages).text(data.responseText);
-    } else {
-        $(formMessages).text('Oops! An error occured and your message could not be sent.');
-    }
-});
 
 
 

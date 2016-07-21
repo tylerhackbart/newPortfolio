@@ -176,6 +176,10 @@ header {
 #20B2AA
 */
 
+.red_main_block {
+  background-color: #CA3C31;
+}
+
 .topheadersquares {
     width: 40px;
     height: 40px;
@@ -512,17 +516,30 @@ CSS for email form below
   outline: none;
 }
 
-#Button {
+.submitButtonShape {
   width: 175px;
   height: 50px;
-  background-color: #FBB039;
-  color: #FFFFFF;
   border: none;
   margin-top: 20px;
+  color: #FFFFFF;
 }
 
-#Button:hover {
+.submitButtonShape:hover {
   opacity: 0.9;
+}
+
+
+#Submit {
+  background-color: #FBB039;
+}
+
+#Submit_sent {
+  background-color: #CA3C31;
+  width: 250px;
+}
+
+.error_empty {
+  border-bottom: 1px solid #ff0000 !important;
 }
 
 
@@ -709,6 +726,99 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
   /*text-decoration: underline;*/
 }
 
+#pop_up_human {
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 1000; 
+  position:fixed;
+   top:0; 
+   display:none; 
+   left:0;
+}
+
+.parent_div_human {
+  width: 30%; 
+  height: auto;
+  background-color: #FFFFFF; 
+  border-radius: 7px; 
+  margin-left: 35%; 
+  margin-top: 15%;
+}
+
+.main_title_human {
+  text-align: center; 
+  padding: 40px 0px 0px 0px; 
+  font-size: 28px; 
+  font-weight: 100;
+}
+
+.main_block_human {
+  text-align: center;
+  font-size: 16px; 
+  padding: 0px 10% 5px 10%;
+}
+
+.button_choice_human {
+  display:inline-flex; 
+  width: 100%; 
+  bottom: 0px; 
+  padding-top:6px;
+}
+
+.button_choice_human a {
+  text-decoration: none !important;
+  color: #4682B4;
+}
+
+.button_choice_human a:hover {
+  text-decoration: none !important;
+  color: #FFFFFF;
+}
+
+.button_general_human {
+  width: 50%; 
+  height: 50px;
+  border-top: 0.15px solid #4682B4;
+}
+
+.button_general_human:hover {
+  background-color: #4682B4;
+}
+
+.button_general_human p {
+  bottom: 0; 
+  text-align: center; 
+  padding-top: 15px;
+}
+
+.button_cancel_human {
+  border-bottom-left-radius: 7px; 
+  -moz-border-radius-bottomleft: 7px; 
+  -webkit-border-bottom-left-radius: 7px;
+  border-right: 0.15px solid #4682B4;
+}
+
+.button_cancel_human:hover {
+  border-left: 0.15px solid #FFFFFF;
+  border-bottom: 0.15px solid #FFFFFF;
+}
+
+
+.button_send_human {
+  border-bottom-right-radius: 7px; 
+  -moz-border-radius-bottomright: 7px; 
+  -webkit-border-bottom-right-radius: 7px;
+}
+
+.button_send_human:hover {
+  border-right: 0.15px solid #FFFFFF;
+  border-bottom: 0.15px solid #FFFFFF;
+}
+
+
+
+
 
 
 @media(max-width: 519px) {
@@ -777,7 +887,11 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
     margin-top: 10px;
   }
 
-
+.parent_div_human {
+  width: 80%;
+  margin-left: 10%;
+  height:auto;
+}
 
 
 
@@ -909,6 +1023,8 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
 
 
 }
+
+
 
 
 

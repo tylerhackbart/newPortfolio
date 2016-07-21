@@ -500,24 +500,31 @@
         <div class="col-md-10">
           <input type="text" id="subject" placeholder="Subject" name="subject" />
           <textarea id="message" placeholder="Message*" name="message"></textarea>
-          <button id="ButtonSubmit" class="lead" onclick='areYouHuman();'> Send Message</button>
-<div id="HumanPopUp" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      Are Your Human
-      <button type='reset'>No</button><button >Yes</button> <button > Send Message</button>
-    </div>
-  </div>
-</div>
-        </div>
+          <div id="replacementOnceSent">
+            <button id="Submit" class="lead submitButtonShape" onclick='areYouHuman();'> Send Message</button>
+          </div>
+ 
+          <div id="pop_up_human">
+            <div class="parent_div_human">   
+              <p class="main_title_human">Are you a Human?</p>
+              <p class="main_block_human">This is a security measure to make sure<br> you are who you say you are.</p>
+              <br>
+              <div class="button_choice_human">
+                <a class="button_general_human button_cancel_human" onclick="clearOut();">
+                  <p>Cancel</p>
+                </a>
+                <a id="send_email" class="button_general_human button_send_human">
+                  <p>Send Mail</p>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- <div style="width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 1000; position:fixed; top:0; display:block; left:0;" >
-  <h1 style="color: #FFFFFF;">Hello</h1>
 
-</div> -->
 
 <div id="twitter-section" class="col-md-12 col-xs-12">
 <div class="twitter-icon">
