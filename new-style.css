@@ -51,14 +51,14 @@ html, body {
 
 }
 .carousel .carousel-inner .bg1 {
-  background-image:url(images/tyler-main-2.jpg);
+  background-image:url(images/image1.jpg);
   background-position: left top;
   background-attachment : fixed;
 }
 
 
 .carousel .carousel-inner .bg2 {
-  background-image:url(images/image1.jpg);
+  background-image:url(images/tyler-main-2.jpg);
   background-position: center center;
   background-attachment : fixed;
 }
@@ -324,11 +324,12 @@ header {
   background-color: #D8D8Bf;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
  }
 
  .quote-border-1 {
     border: 5px solid #FFFFFF;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6);
  }
 
  .quote-block-2 {
@@ -348,6 +349,36 @@ header {
  .quote-border-3 {
  border: 5px solid #FFFFFF; background: transparent;
  }
+
+
+ .code-language-section {
+  background-image:url(images/code_screen_languages.png);
+  background-color: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 25px 10% 25px 10%;
+  width: 100%;
+ }
+
+ .code-language-collection {
+  width: 100%;
+  text-align: left;
+  /*padding:10%;*/
+ }
+
+.code-language-individual {
+  padding: 20px 30px;
+  border: 3px solid #FFFFFF;
+  font-size: 24px;
+  font-weight: 400;
+  border-radius: 7px;
+  color: #FFFFFF;
+  float: left;
+  margin-right: 20px;
+
+}
+
 
 .circle {
   width: 75px;
@@ -816,6 +847,29 @@ the min-height needs to be somewhere in the 250px range and when it is 1000px an
   border-bottom: 0.25px solid #FFFFFF;
 }
 
+/*Added new CSS 12/02/2017*/
+
+.box-skill {
+  height: inherit;
+  width: inherit;
+  max-width: 68px;
+  text-align: center;
+  left: 0;
+  background-color: #4682B4;
+}
+
+.box-skill p {
+  width: auto;
+  font-size: 30px;
+  color: #FFFFFF;
+  text-align:center;
+  margin-bottom: 2px;
+  padding: 10px;
+}
+
+.additional-space-skill .col-md-4{
+  margin-bottom: 10px;
+}
 
 
 
