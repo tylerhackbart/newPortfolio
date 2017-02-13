@@ -127,7 +127,7 @@ function deleteEverything() {
 // working on validate for emails
 function areYouHuman() {
 $('body').addClass('stop-scrolling');
-  name = $('#name').val();areYouHuman
+  name = $('#name').val();
 
   email = $('#email').val();
 
